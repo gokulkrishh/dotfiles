@@ -1,40 +1,46 @@
 
-#Author
+##Utility functions
 
-echo "Gokul's Dotfiles"
-echo ""
+#Custom Utility functions
+custom_echo() {
+  local fmt="$1"; shift
 
-echo "Set up your OS X for development..."
-echo ""
+  printf "\n$fmt\n" "$@"
+}
 
-echo "Repo: https://github.com/gokulkrishh/dotfiles"
-echo "Author: https://github.com/gokulkrishh"
-echo "Twitter: https://twitter.com/gokul_i"
-echo ""
-
-#Install Oh My Zsh
-
-curl -L http://install.ohmyz.sh | sh
-
-cp ohmyzsh/zshrc ~/.zshrc
-cp npmrc ~/.npmrc
-
-#Copy aliases
-cat aliases mac-aliases > ~/.aliases
-
-#Make directories
-mkdir -p ~/workspace
-mkdir -p ~/practices
+#Welcome message
+custom_echo "Your OS X development machine is just a few steps away"
+custom_echo "Author: https://github.com/gokulkrish"
 
 # Set up git global values
+custom_echo '\e[1;34m%-6s\e[m' "==> Setting git global configuration <=="
 cp gitignore ~/.gitignore_global
 git config --global core.excludesfile '~/.gitignore_global'
 git config --global user.email "krishnangokul9@gmail.com"
 git config --global user.name "gokulkrishh"
 
-#Set up npm for global install without sudo
-mkdir "${HOME}/.npm-packages"
-mkdir "${HOME}/.python-packages"
+#Install Oh My Zsh
+custom_echo '\e[1;34m%-6s\e[m' "==> Installating Oh My Zsh <=="
+curl -L http://install.ohmyz.sh | sh
 
-#Install commonly used npm and generator-smacss
-npm install -g gulp grunt-cli jshint yo generator-smacss kill-tabs
+#Copy zshrc config
+custom_echo '\e[1;34m%-6s\e[m'  "==> Copying shortcuts <=="
+custom_echo '\e[1;34m%-6s\e[m'  "==> Check your .zshrc file for more details <=="
+cp zshrc ~/.zshrc
+
+#Install Homebrew
+custom_echo '\e[1;34m%-6s\e[m'  "==> Installing Homebrew <=="
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+#Install node
+custom_echo '\e[1;34m%-6s\e[m'  "==> Installing Node.js <=="
+brew install node
+
+#Set up npm for global install without sudo
+custom_echo '\e[1;34m%-6s\e[m'  "==> Set up npm for global install without sudo <=="
+cp npmrc ~/.npmrc
+mkdir "${HOME}/.npm-packages"
+
+#Install commonly used npm and generator-smacss etc.
+custom_echo '\e[1;34m%-6s\e[m'  "==> Installing commonly used npm modules & generators <=="
+npm install -g gulp grunt-cli jshint yo generator-mocha@0.1.0 generator-smacss
