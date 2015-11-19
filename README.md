@@ -2,12 +2,6 @@
 
 My current dotfiles for development in OS X.
 
-## OS X
-
-```bash
-git clone https://github.com/gokulkrishh/dotfiles.git && cd dotfiles && sh bash mac-setup.sh
-```
-
 ## Before Install
 
 Download and set the up the following
@@ -21,6 +15,12 @@ Download and set the up the following
 1. Copy config for [Atom](https://gist.github.com/gokulkrishh/bb54b5fd5a2832567eaf) and [Sublime](https://gist.github.com/gokulkrishh/509f5a7cbc4077ccd857)
 
 1. Install the  [Tools](https://github.com/gokulkrishh/Tools-I-use) I use for Frontend Development
+
+## OS X
+
+```bash
+git clone https://github.com/gokulkrishh/dotfiles.git && cd dotfiles && sh bash mac-setup.sh
+```
 
 
 ## Installation
