@@ -2,6 +2,8 @@
 
 My current dotfiles for development in OS X.
 
+# OS X only
+
 ## Before Install
 
 Download and set the up the following
@@ -16,14 +18,13 @@ Download and set the up the following
 
 1. Install the  [Tools](https://github.com/gokulkrishh/Tools-I-use) I use for Frontend Development
 
-## OS X
+## Install
 
 ```bash
 git clone https://github.com/gokulkrishh/dotfiles.git && cd dotfiles && sh bash mac-setup.sh
 ```
 
-
-## Installation
+## Installation process
 
 Above command will install the following tools in your OS X
 
