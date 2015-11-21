@@ -4,7 +4,7 @@ Dotfiles to get you started with OS X machine for development.
 
 *Your development machine is just a few steps away.*
 
-![dotfiles](https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/screenshotÂ.png "dotfiles")
+![dotfiles](https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/screenshot.png "dotfiles")
 
 
 # OS X
@@ -31,7 +31,7 @@ Above command will install the following in your OS X Machine
 
 1. [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) as your default in terminal.
 
-1. Copy `.zshrc` config & aliases (check the file .zshrc more details).
+1. Copy `.zshrc` config, themes & aliases (check the file .zshrc more details).
 
 1. Install [Homebrew](http://brew.sh/).
 
