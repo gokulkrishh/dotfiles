@@ -1,0 +1,123 @@
+
+#   ----------------------------------------------------------------
+#
+#   Welcome!!
+#
+#   dotfiles to get you started with OS X machine for development.
+#
+#   Author: https://github.com/gokulkrishh
+#
+#   Sections:
+#   1.  Git Configs
+#   2.  Install Oh My Zsh & Aliases & Shortcuts
+#   3.  Install Homebrew
+#   4.  Install NodeJS & Common npm modules & Config
+#
+#   ----------------------------------------------------------------
+
+# Custom color codes & utility functions
+source utility.sh
+
+#   -----------------------------
+#   Welcome Message
+#   -----------------------------
+
+e_bold ${tan}"┌──────────────────────────────────────────────────────────────┐
+|                                                              |
+| Welcome!!                                                    |
+|                                                              |
+| Setup your OS X machine for web development at ease.         |
+|                                                              |
+| Author: https://github.com/gokulkrish                        |
+|                                                              |
+└──────────────────────────────────────────────────────────────┘"
+
+
+# Author
+
+#   -----------------------------
+#   1.  Git configuration
+#   -----------------------------
+
+e_header "Setup git global config..."
+cp gitignore ~/.gitignore_global                              # Adding .gitignore global
+git config --global core.excludesfile '~/.gitignore_global'
+
+ask ${blue}"Enter Your Github Email:"
+read emailId
+if is_empty $emailId; then
+  git config --global user.email "$emailId" # Git Email Id
+  e_success "Email is set"
+else
+  e_error "Not set"
+fi
+
+ask ${blue}"Enter Your Github Username:"
+read userName
+if is_empty $userName; then
+  git config --global user.name "$userName" # Git Username
+  e_success "Username is set"
+else
+  e_error "Not set"
+fi
+
+
+#   -------------------------------------------------
+#   2.  Install Oh My Zsh & Aliases & Shortcuts
+#   -------------------------------------------------
+
+ZSH=~/.oh-my-zsh
+
+if [ -d "$ZSH" ]; then
+  e_warning "Oh My Zsh is already installed. skipping.."
+else
+  e_header "Installating Oh My Zsh..."
+  curl -L http://install.ohmyz.sh | sh
+
+  #To install ZSH themes & aliases
+  e_header "Copying ZSH themes & aliases..."
+  e_note "Check .aliases file for more details."
+  cp aliases ~/.aliases                                        # Copy aliases
+  cp zshrc ~/.zshrc                                            # Copy .zshrc config
+  cp dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme   # Copy dracula theme
+fi
+
+#   -----------------------------
+#   3.  Install Homebrew
+#   -----------------------------
+
+if is_exists 'brew'; then
+  e_header "Installing Homebrew..."
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+else
+  e_warning "Homebrew is already installed. skipping.."
+fi
+
+#   --------------------------------------------------
+#   4.  Install NodeJS & Common npm modules & Config
+#   --------------------------------------------------
+
+if is_exists 'node'; then
+  e_header "Installing NodeJS..."
+  brew install node                                           # Install NodeJS with brew
+
+  # To setup npm install/update -g without sudo
+  e_warning "Setting npm install/update -g without sudo.."
+  cp npmrc ~/.npmrc
+  mkdir "${HOME}/.npm-packages"                               # NPM global install without sudo
+else
+  e_warning "Node.js is already installed. skipping.."
+fi
+
+# Install commonly used npm modules etc.
+e_header "Installing commonly used npm modules & generators..."
+npm install -g gulp grunt-cli jshint yo generator-mocha@0.1.0 generator-smacss
+
+e_warning "Globally installed npm modules:"
+npm -g ls --depth=0                                         # List of all globally installed npm modules
+
+e_thanks "Close and open your terminal for the changes."
+
+e_thanks "Thanks for using my dotfiles."
+
+## END

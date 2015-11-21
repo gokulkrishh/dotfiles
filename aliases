@@ -1,0 +1,78 @@
+
+#   ----------------------------------------------------------------
+#
+#   Welcome!!
+#
+#   Author: https://github.com/gokulkrishh
+#
+#   Aliases & Shortcuts:
+#   1.  Git
+#   2.  Easy Navigation
+#   3.  Tools & Utilities
+#   4.  OS X Utilities
+#   5.  Web Development
+#
+#   ----------------------------------------------------------------
+
+
+#   -----------------------------
+#   1. Git
+#   -----------------------------
+
+alias s='git status'
+
+
+#   -----------------------------
+#   2. Easy Navigation
+#   -----------------------------
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias p="cd ~/practices"
+alias w="cd ~/workspace"
+
+
+#   -----------------------------
+#   3. Tools & Utilities
+#   -----------------------------
+
+alias f="open -a Finder"
+alias rm="=rm -rf"
+alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
+alias ip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+
+#   -----------------------------
+#   4. OS X Utilities
+#   -----------------------------
+
+# To kill all chrome tabs
+alias kt="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+
+# List all files colorized in long format
+alias l='ls -l ${colorflag}'
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+
+#   -----------------------------
+#   5. Web Development
+#   -----------------------------
+
+alias st="open -a 'Sublime Text'"
+alias at="open -a 'Atom'"
+
+alias server='python -m SimpleHTTPServer' # To start a local server
+
+# To update OS X Software, brew, npm, gem and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
+
+# NODE & BOWER
+alias npmi="sudo npm install"
+alias npmg="sudo npm install -g"
+alias npmu="sudo npm update"
+alias bi="bower install"
+
+## END
