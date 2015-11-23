@@ -1,4 +1,5 @@
 
+
 #   ----------------------------------------------------------------
 #
 #   Welcome!!
@@ -116,7 +117,9 @@ npm install -g gulp grunt-cli jshint yo generator-mocha@0.1.0 generator-smacss
 e_warning "Globally installed npm modules:"
 npm -g ls --depth=0                                         # List of all globally installed npm modules
 
-e_thanks "Close and open your terminal for the changes."
+e_thanks "Restart your terminal for the changes.."
+
+e_thanks "Author: https://github.com/gokulkrish"
 
 e_thanks "Thanks for using my dotfiles."
 

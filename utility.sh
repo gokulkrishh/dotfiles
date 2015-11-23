@@ -51,7 +51,7 @@ ask() {
 }
 
 e_thanks() {
-  printf "\n${bold}${purple}$@${reset}"
+  printf "\n${bold}${purple}$@${reset}\n"
 }
 
 e_header() {
