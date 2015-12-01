@@ -23,7 +23,7 @@ source utility.sh
 #   Welcome Message
 #   -----------------------------
 
-e_bold ${tan}"┌──────────────────────────────────────────────────────────────┐
+e_bold "${tan}┌──────────────────────────────────────────────────────────────┐
 |                                                              |
 | Welcome!!                                                    |
 |                                                              |
@@ -41,11 +41,11 @@ e_bold ${tan}"┌─────────────────────
 #   -----------------------------
 
 e_header "Setup git global config..."
-cp gitignore ~/.gitignore_global                              # Adding .gitignore global
-git config --global core.excludesfile '~/.gitignore_global'
+cp gitignore ~/.gitignore_global  # Adding .gitignore global
+git config --global core.excludesfile "${HOME}/.gitignore_global"
 
-ask ${blue}"Enter Your Github Email:"
-read emailId
+ask "${blue} Enter Your Github Email:"
+read -r emailId
 if is_empty $emailId; then
   git config --global user.email "$emailId" # Git Email Id
   e_success "Email is set"
@@ -53,8 +53,8 @@ else
   e_error "Not set"
 fi
 
-ask ${blue}"Enter Your Github Username:"
-read userName
+ask "${blue} Enter Your Github Username:"
+read -r userName
 if is_empty $userName; then
   git config --global user.name "$userName" # Git Username
   e_success "Username is set"
