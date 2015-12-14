@@ -112,7 +112,7 @@ fi
 
 # Install commonly used npm modules etc.
 e_header "Installing commonly used npm modules & generators..."
-npm install -g gulp grunt-cli jshint yo generator-mocha@0.1.0 generator-smacss
+npm install -g gulp grunt-cli jshint browser-sync yo generator-mocha@0.1.0 generator-smacss
 
 e_warning "Globally installed npm modules:"
 npm -g ls --depth=0                                         # List of all globally installed npm modules
