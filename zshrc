@@ -24,8 +24,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#Set aliases
+# Setting zsh aliases
 source $HOME/.aliases
+
+# Setting atom as default editor
+export EDITOR='atom'
 
 ##To set node packages path
 # Allow global npm install without sudo (https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md)

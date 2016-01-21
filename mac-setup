@@ -87,7 +87,7 @@ fi
 #   3.  Install Homebrew
 #   -----------------------------
 
-if is_exists 'brew'; then
+if test ! $(which brew); then
   e_header "Installing Homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
@@ -98,12 +98,12 @@ fi
 #   4.  Install NodeJS & Common npm modules & Config
 #   --------------------------------------------------
 
-if is_exists 'node'; then
+if test ! $(which node); then
   e_header "Installing NodeJS..."
   brew install node                                           # Install NodeJS with brew
 
   # To setup npm install/update -g without sudo
-  e_warning "Setting npm install/update -g without sudo.."
+  e_warning "Setting global npm install/update without sudo.."
   cp npmrc ~/.npmrc
   mkdir "${HOME}/.npm-packages"                               # NPM global install without sudo
 else
@@ -111,16 +111,23 @@ else
 fi
 
 # Install commonly used npm modules etc.
-e_header "Installing commonly used npm modules & generators..."
-npm install -g gulp grunt-cli jshint browser-sync yo generator-mocha@0.1.0 generator-smacss
+e_header "Installing commonly used npm modules..."
+declare -a npm_modules=("gulp" "jshint" "browser-sync" "yo" "generator-mocha@>=0.1.0" "generator-smacss")
+for module in "${npm_modules[@]}"
+do
+  if test ! $(which $module); then
+    e_warning "Installing $module..."
+    npm install -g $module
+  fi
+done
 
-e_warning "Globally installed npm modules:"
+e_warning "Globally Installed NPM Modules"
 npm -g ls --depth=0                                         # List of all globally installed npm modules
 
 e_thanks "Restart your terminal for the changes.."
 
-e_thanks "Author: https://github.com/gokulkrish"
+e_thanks "Author: https://github.com/gokulkrishh"
 
-e_thanks "Thanks for using my dotfiles."
+e_thanks "Thanks for using my Dotfiles."
 
-## END
+# END
