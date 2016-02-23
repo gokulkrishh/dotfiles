@@ -1,0 +1,30 @@
+"*":
+  "atom-material-ui":
+    accentColor: "Blue"
+    compactTreeView: true
+    depth: true
+    disableAnimations: true
+    fontSize: "Big"
+    rippleAccentColor: true
+    showTabIcons: "Show on all tabs"
+    slimScrollbar: true
+    tabSize: "Big"
+    useRobotoInUI: true
+  "browser-refresh-on-save":
+    safari: false
+    scripts: {}
+  "color-picker":
+    abbreviateValues: true
+    preferredFormat: "HEX"
+  core:
+    themes: [
+      "atom-material-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+  "git-plus": {}
+  react: {}
+  welcome:
+    showOnStartup: false
