@@ -21,10 +21,22 @@
       "atom-material-ui"
       "base16-tomorrow-dark-theme"
     ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+    ]
   editor:
     invisibles: {}
     showIndentGuide: true
+  "exception-reporting":
+    userId: "3dd2222c-c7ea-ebf2-c4fb-86c36ffbe4ed"
   "git-plus": {}
   react: {}
+  "tree-view":
+    hideIgnoredNames: true
   welcome:
     showOnStartup: false
