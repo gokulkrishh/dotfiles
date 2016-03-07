@@ -41,9 +41,9 @@ Thats all. You are good to go with development in your OS X.
 
 ### Extra tools (Install from below link)
 
-1. [Plugins](https://github.com/gokulkrishh/Tools-I-use#text-editors) for Sublime and Atom.
+1. [Plugins](https://github.com/gokulkrishh/Tools-I-use#text-editors) for Atom Editor.
 
-1. Editor configuration for [Atom](https://gist.github.com/gokulkrishh/bb54b5fd5a2832567eaf) and [Sublime](https://gist.github.com/gokulkrishh/509f5a7cbc4077ccd857).
+1. Configuration file for [Atom Editor](https://github.com/gokulkrishh/dotfiles/blob/master/atom/config.cson)
 
 1. [Tools](https://github.com/gokulkrishh/Tools-I-use) I use for Front-End Development like browsers, chrome extensions, perf tools etc.
 
