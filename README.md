@@ -20,7 +20,7 @@ Download and set the up the following.
 ## Run below code in terminal
 
 ```bash
-git clone https://github.com/gokulkrishh/dotfiles.git && cd dotfiles && sh mac-setup
+git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd dotfiles && sh mac-setup
 ```
 
 ## Installation process
