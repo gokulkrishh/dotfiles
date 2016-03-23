@@ -19,7 +19,8 @@
 #   1. Git
 #   -----------------------------
 
-alias s='git status'
+alias s="git status"
+alias gdmb="git branch --merged | grep -v "\*" | xargs -n 1 git branch -d" #To delete all local branches merged with master
 
 
 #   -----------------------------
@@ -29,6 +30,7 @@ alias s='git status'
 alias ..="cd .."
 alias ...="cd ../.."
 alias p="cd ~/practices"
+alias cl="cd ~/codelabs"
 alias w="cd ~/workspace"
 
 
@@ -47,7 +49,7 @@ alias ip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0
 #   -----------------------------
 
 # To kill all chrome tabs
-alias kt="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+alias kt="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill\"
 
 # List all files colorized in long format
 alias l='ls -l ${colorflag}'

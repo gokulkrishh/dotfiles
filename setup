@@ -95,7 +95,7 @@ else
 fi
 
 #   --------------------------------------------------
-#   4.  Install NodeJS & Common npm modules & Config
+#   4.  Install NodeJS & common npm modules, config's
 #   --------------------------------------------------
 
 if test ! $(which node); then
@@ -112,7 +112,7 @@ fi
 
 # Install commonly used npm modules etc.
 e_header "Installing commonly used npm modules..."
-declare -a npm_modules=("gulp" "jshint" "browser-sync" "yo" "generator-mocha@>=0.1.0" "generator-smacss")
+declare -a npm_modules=("gulp" "browser-sync" "yo" "generator-mocha@>=0.1.0" "generator-smacss")
 for module in "${npm_modules[@]}"
 do
   if test ! $(which $module); then
@@ -128,6 +128,6 @@ e_thanks "Restart your terminal for the changes.."
 
 e_thanks "Author: https://github.com/gokulkrishh"
 
-e_thanks "Thanks for using my Dotfiles."
+e_thanks "Thanks for using my Dotfiles"
 
 # END
