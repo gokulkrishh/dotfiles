@@ -49,7 +49,7 @@ alias sca="screencapture -c -W -P"
 #   -----------------------------
 
 # To kill all chrome tabs
-alias kt="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill\"
+alias kt="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 
 # List all files colorized in long format
 alias l='ls -l ${colorflag}'

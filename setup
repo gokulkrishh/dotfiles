@@ -29,7 +29,7 @@ e_bold "${tan}┌─────────────────────
 |                                                              |
 | Setup your OS X machine for web development at ease.         |
 |                                                              |
-| Author: https://github.com/gokulkrish                        |
+| Author: https://github.com/gokulkrishh                       |
 |                                                              |
 └──────────────────────────────────────────────────────────────┘"
 
@@ -112,7 +112,7 @@ fi
 
 # Install commonly used npm modules etc.
 e_header "Installing commonly used npm modules..."
-declare -a npm_modules=("gulp" "browser-sync" "yo" "generator-mocha@>=0.1.0" "generator-smacss")
+declare -a npm_modules=("browser-sync" "yo")
 for module in "${npm_modules[@]}"
 do
   if test ! $(which $module); then
@@ -120,9 +120,6 @@ do
     npm install -g $module
   fi
 done
-
-e_warning "Globally Installed NPM Modules"
-npm -g ls --depth=0                                         # List of all globally installed npm modules
 
 e_thanks "Restart your terminal for the changes.."
 

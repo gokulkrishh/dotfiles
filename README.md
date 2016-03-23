@@ -35,7 +35,7 @@ Above command will install the following in your OS X Machine
 
 1. Install [Homebrew](http://brew.sh/).
 
-1. Install [Node.JS](https://nodejs.org/en/) and commonly used node modules such as gulp, jshint, yo, generator-mocha, [generator-smacss](https://github.com/fuelfrontend/generator-smacss) globally. (No need of sudo anymore for global npm install)
+1. Install [Node.JS](https://nodejs.org/en/) (Install node modules globally without sudo)
 
 Thats all. You are good to go with development in your OS X.
 
