@@ -42,7 +42,7 @@ alias f="open -a Finder"
 alias rm="=rm -rf"
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 alias ip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
-
+alias sca="screencapture -c -W -P"
 
 #   -----------------------------
 #   4. OS X Utilities
