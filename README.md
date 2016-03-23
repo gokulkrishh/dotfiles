@@ -4,7 +4,7 @@ Dotfiles to get you started with OS X machine for development.
 
 *Your development machine is just a few steps away.*
 
-![dotfiles](https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/screenshot.png "screenshot")
+![dotfiles](https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/screenshot_new.png "screenshot")
 
 
 # OS X
