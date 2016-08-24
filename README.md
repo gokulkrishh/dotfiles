@@ -1,8 +1,8 @@
 # ☠ dotfiles
 
-Dotfiles to get you started with OS X machine for development.
+*To get you started with OS X machine for web development.*
 
-*Your development machine is just a few steps away.*
+> Your development machine is just a few steps away.
 
 ![dotfiles](https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/screenshot.png "screenshot")
 
