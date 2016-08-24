@@ -17,3 +17,6 @@ defaults write com.apple.screencapture type -string "png"
 # Chime When Charging
 defaults write com.apple.PowerChime ChimeOnAllHardware -bool true && \
 open /System/Library/CoreServices/PowerChime.app
+
+# Dark Theme to menubar
+sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true

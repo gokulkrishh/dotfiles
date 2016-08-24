@@ -1,3 +1,6 @@
+# Set Dark Theme to Dock & Fullscreen
+defaults write NSGlobalDomain AppleInterfaceStyle Dark;
+
 # Remove the auto-hiding Dock delay
 defaults write com.apple.Dock autohide-delay -float 0
 
