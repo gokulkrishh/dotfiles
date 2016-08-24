@@ -25,7 +25,7 @@ Above command will install the following in your OS X Machine
 
 1. Copy `.zshrc` config, themes & aliases (check the file .zshrc more details).
 
-1. [Homebrew](http://brew.sh/) && [Node.JS](https://nodejs.org/en/) (Install node modules globally without sudo)
+1. [Homebrew](http://brew.sh/) & [Node.JS](https://nodejs.org/en/) (Install node modules globally without sudo)
 
 Thats all. You are good to go with development in your OSX.
 
