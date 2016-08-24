@@ -1,1 +1,1 @@
-rm ~/dotfiles && git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfiles && bash setup
+rm ~/dotfiles && git clone https://github.com/gokulkrishh/dotfiles/setup ~/dotfiles && cd ~/dotfiles && bash setup
