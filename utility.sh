@@ -55,7 +55,7 @@ e_thanks() {
 }
 
 e_header() {
-  printf "\n${underline}${bold}${purple}%s${reset}\n" "$@"
+  printf "\n${underline}${bold}${green}%s${reset}\n" "$@"
 }
 
 e_arrow() {

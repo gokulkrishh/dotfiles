@@ -29,7 +29,6 @@ alias gdmb="git branch --merged | grep -v "\*" | xargs -n 1 git branch -d" #To d
 
 alias ..="cd .."
 alias ...="cd ../.."
-alias p="cd ~/practices"
 alias cl="cd ~/codelabs"
 alias w="cd ~/workspace"
 
@@ -66,10 +65,11 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias st="open -a 'Sublime Text'"
 alias at="open -a 'Atom'"
 
+# Local server using python httpServer
 alias server='python -m SimpleHTTPServer' # To start a local server
 
-# To update OS X Software, brew, npm, gem and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
+# To update brew, npm, gem and their installed packages
+alias update='brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
 # NODE & BOWER
 alias npmi="sudo npm install"

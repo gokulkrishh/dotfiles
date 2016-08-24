@@ -4,49 +4,40 @@ Dotfiles to get you started with OS X machine for development.
 
 *Your development machine is just a few steps away.*
 
-![dotfiles](https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/screenshot_new.png "screenshot")
+![dotfiles](https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/screenshot.png "screenshot")
 
 
 # OS X
 
-## Before Install
-
-Download and set the up the following.
-
-1. Install Git.
-
-1. Download and install [Sublime Text 3](www.sublimetext.com/3) and [Atom Editor](https://atom.io/).
-
 ## Run below code in terminal
 
-```bash
+```sh
 git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfiles && bash setup
 ```
 
-## Installation process
+## Install
 
 Above command will install the following in your OS X Machine
 
-1. Git Configs.
+1. Setup Git Config (global).
 
 1. [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) as your default in terminal.
 
 1. Copy `.zshrc` config, themes & aliases (check the file .zshrc more details).
 
-1. Install [Homebrew](http://brew.sh/).
+1. [Homebrew](http://brew.sh/)
 
-1. Install [Node.JS](https://nodejs.org/en/) (Install node modules globally without sudo)
+1. [Node.JS](https://nodejs.org/en/) (Install node modules globally without sudo)
 
-Thats all. You are good to go with development in your OS X.
+Thats all. You are good to go with development in your OSX.
 
-### Extra tools (Install from below link)
+### Extra tools
 
-1. [Plugins](https://github.com/gokulkrishh/Tools-I-use#text-editors) for Atom Editor.
+[Tools](https://github.com/gokulkrishh/Tools-I-use) I use for Front-End Development like browsers, chrome extensions, perf tools etc.
 
-1. Configuration file for [Atom Editor](https://github.com/gokulkrishh/dotfiles/blob/master/atom/config.cson)
+### Features Improvements
+Found a bug, create an issue or new feature give me a PR. Lets reduce the pain of setting up machine for development from scratch.
 
-1. [Tools](https://github.com/gokulkrishh/Tools-I-use) I use for Front-End Development like browsers, chrome extensions, perf tools etc.
+### Licence
 
-## Bugs or Features Improvement
-
-Found a bug, file an issue or new feature give me a PR. Lets reduce the pain of setting up machine for development from scratch.
+MIT © [Gokulakrishnan Kalaikovan](http://github.com/gokulkrishh)   

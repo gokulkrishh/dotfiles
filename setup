@@ -12,7 +12,7 @@
 #   1.  Git Configs
 #   2.  Install Oh My Zsh & Aliases & Shortcuts
 #   3.  Install Homebrew
-#   4.  Install NodeJS & Common npm modules & Config
+#   4.  Install NodeJS
 #
 #   ----------------------------------------------------------------
 
@@ -20,7 +20,7 @@
 source utility.sh
 
 #   -----------------------------
-#   Welcome Message
+#   Welcome msg
 #   -----------------------------
 
 e_bold "${tan}┌──────────────────────────────────────────────────────────────┐
@@ -40,7 +40,7 @@ e_bold "${tan}┌─────────────────────
 #   1.  Git configuration
 #   -----------------------------
 
-e_header "Setup git global config..."
+e_header "Setup git global config"
 cp gitignore ~/.gitignore_global  # Adding .gitignore global
 git config --global core.excludesfile "${HOME}/.gitignore_global"
 
@@ -88,43 +88,30 @@ fi
 #   -----------------------------
 
 if test ! $(which brew); then
-  e_header "Installing Homebrew..."
+  e_header "Installing Homebrew"
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
   e_warning "Homebrew is already installed. skipping.."
 fi
 
 #   --------------------------------------------------
-#   4.  Install NodeJS & common npm modules, config's
+#   4.  Install NodeJS
 #   --------------------------------------------------
 
 if test ! $(which node); then
-  e_header "Installing NodeJS..."
-  brew install node                                           # Install NodeJS with brew
+  e_header "Installing NodeJS"
+  brew install node
 
   # To setup npm install/update -g without sudo
-  e_warning "Setting global npm install/update without sudo.."
   cp npmrc ~/.npmrc
-  mkdir "${HOME}/.npm-packages"                               # NPM global install without sudo
+  mkdir "${HOME}/.npm-packages"
+  export PATH="$HOME/.node/bin:$PATH"
 else
-  e_warning "Node.js is already installed. skipping.."
+  e_warning "NodeJS is already installed. skipping.."
 fi
 
-# Install commonly used npm modules etc.
-e_header "Installing commonly used npm modules..."
-declare -a npm_modules=("browser-sync" "yo")
-for module in "${npm_modules[@]}"
-do
-  if test ! $(which $module); then
-    e_warning "Installing $module..."
-    npm install -g $module
-  fi
-done
+e_success "Restart your terminal to get started.."
 
-e_thanks "Restart your terminal for the changes.."
-
-e_thanks "Author: https://github.com/gokulkrishh"
-
-e_thanks "Thanks for using my Dotfiles"
+e_thanks "☠ Author: https://github.com/gokulkrishh \n"
 
 # END

@@ -1,40 +1,75 @@
 "*":
+  "activate-power-mode":
+    particles:
+      size: {}
+      spawnCount: {}
+      totalCount: {}
+    screenShake:
+      enabled: false
   "atom-material-ui":
-    accentColor: "Blue"
-    compactTreeView: true
-    depth: true
-    disableAnimations: true
-    fontSize: "Big"
-    rippleAccentColor: true
-    showTabIcons: "Show on all tabs"
-    slimScrollbar: true
-    tabSize: "Big"
-    useRobotoInUI: true
+    colors:
+      abaseColor:
+        red: 28
+        green: 140
+        blue: 228
+        alpha: 1
+      genAccent: true
+      predefinedColor: "Blue"
+    fonts:
+      fontSize: 15
+    tabs:
+      compactTabs: true
+    treeView:
+      blendTabs: true
+      compactList: true
+    ui:
+      animations: false
+      panelContrast: true
+      panelShadows: true
   "browser-refresh-on-save":
+    chrome: false
     safari: false
     scripts: {}
-  "color-picker":
-    abbreviateValues: true
-    preferredFormat: "HEX"
+    vivaldi: false
   core:
+    disabledPackages: [
+      "language-java"
+      "welcome"
+      "styleguide"
+      "metrics"
+    ]
+    openEmptyEditorOnStart: false
     themes: [
       "atom-material-ui"
-      "base16-tomorrow-dark-theme"
+      "one-dark-syntax"
     ]
-    ignoredNames: [
-      ".git"
-      ".hg"
-      ".svn"
-      ".DS_Store"
-      "._*"
-      "Thumbs.db"
-    ]
+  cssbeautify: {}
   editor:
     invisibles: {}
+    scrollPastEnd: true
     showIndentGuide: true
+    useShadowDOM: false
+  emmet: {}
   "exception-reporting":
-    userId: "3dd2222c-c7ea-ebf2-c4fb-86c36ffbe4ed"
-  "git-plus": {}
+    userId: ""
+  fonts: {}
+  "go-to-view": {}
+  ignoredNames: [
+    ".git"
+    ".hg"
+    ".svn"
+    ".DS_Store"
+    "Thumbs.db"
+    ".codekit-cache"
+    "bower_components"
+    "node_modules"
+  ]
+  livereload: {}
+  minimap:
+    absoluteMode: true
+    scrollAnimation: true
+  "nuclide-format-js": {}
+  pigments: {}
   react: {}
   "tree-view":
     hideIgnoredNames: true
