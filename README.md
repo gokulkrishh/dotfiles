@@ -1,4 +1,4 @@
-# dotfiles
+# ☠ dotfiles
 
 Dotfiles to get you started with OS X machine for development.
 
