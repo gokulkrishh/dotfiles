@@ -17,7 +17,12 @@
 #   ----------------------------------------------------------------
 
 # Custom color codes & utility functions
-source utility.sh
+source osx/utility.sh
+
+# Terminal & Dock Setup
+source osx/screen.sh
+source osx/dock.sh
+source osx/terminal.sh
 
 #   -----------------------------
 #   Welcome msg
@@ -112,6 +117,6 @@ fi
 
 e_success "Restart your terminal to get started.."
 
-e_thanks "☠ Author: https://github.com/gokulkrishh \n"
+e_thanks "☠  Author: https://github.com/gokulkrishh \n"
 
 # END

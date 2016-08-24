@@ -33,7 +33,7 @@ source $HOME/.aliases
 # Setting atom as default editor
 export EDITOR='atom'
 
-##To set node packages path
+# To set node packages path
 # Allow global npm install without sudo (https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md)
 NPM_PACKAGES="${HOME}/.npm-packages"
 NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
