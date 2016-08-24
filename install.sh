@@ -45,7 +45,7 @@ e_bold "${tan}┌─────────────────────
 #   1.  Git configuration
 #   -----------------------------
 
-e_header "Setup git global config"
+e_header "Setup git config (global)"
 cp gitignore ~/.gitignore_global  # Adding .gitignore global
 git config --global core.excludesfile "${HOME}/.gitignore_global"
 
@@ -77,7 +77,7 @@ ZSH=~/.oh-my-zsh
 if [ -d "$ZSH" ]; then
   e_warning "Oh My Zsh is already installed. skipping.."
 else
-  e_header "Installating Oh My Zsh..."
+  e_header "Installing Oh My Zsh..."
   curl -L http://install.ohmyz.sh | sh
 
   #To install ZSH themes & aliases
