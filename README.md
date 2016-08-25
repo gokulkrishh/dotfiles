@@ -27,12 +27,6 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfile
 
   - [Homebrew](http://brew.sh/) & [Node.JS](https://nodejs.org/en/) (Install node modules globally without sudo)
 
-### Dotfiles command
-
-```sh
-dotfiles help
-```
-
 ### Extra tools
 
  - [Tools](https://github.com/gokulkrishh/Tools-I-use) I use for Front-End Development like browsers, chrome extensions, perf tools etc.
