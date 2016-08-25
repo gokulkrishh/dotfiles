@@ -83,9 +83,9 @@ else
   #To install ZSH themes & aliases
   e_header "Copying ZSH themes & aliases..."
   e_note "Check .aliases file for more details."
-  cp aliases ~/.aliases                                        # Copy aliases
-  cp zshrc ~/.zshrc                                            # Copy .zshrc config
-  cp dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme   # Copy dracula theme
+  cp oh-my-zsh/aliases ~/.aliases                                        # Copy aliases
+  cp oh-my-zsh/zshrc ~/.zshrc                                            # Copy .zshrc config
+  cp oh-my-zsh/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme   # Copy dracula theme
 fi
 
 #   -----------------------------
