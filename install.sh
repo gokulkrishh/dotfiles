@@ -115,8 +115,8 @@ else
   e_warning "NodeJS is already installed. skipping.."
 fi
 
-e_success "Restart your terminal to get started.."
+e_thanks "Author: https://github.com/gokulkrishh \n"
 
-e_thanks "☠  Author: https://github.com/gokulkrishh \n"
+echo "🍺  Thats all, restart your terminal."
 
 # END
