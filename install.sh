@@ -68,9 +68,9 @@ else
 fi
 
 
-#   -------------------------------------------------
-#   2.  Install Oh My Zsh & Aliases & Shortcuts
-#   -------------------------------------------------
+#   -------------------------------------------------------
+#   2.  Install Oh My Zsh/Hyperterm & Aliases
+#   -------------------------------------------------------
 
 ZSH=~/.oh-my-zsh
 
@@ -113,6 +113,11 @@ if test ! $(which node); then
   export PATH="$HOME/.node/bin:$PATH"
 else
   e_warning "NodeJS is already installed. skipping.."
+fi
+
+# Remove source
+if [ -d ~/dotfiles ]; then
+  rm -R ~/dotfiles
 fi
 
 e_thanks "Author: https://github.com/gokulkrishh \n"
