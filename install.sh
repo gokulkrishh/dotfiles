@@ -95,8 +95,10 @@ fi
 if test ! $(which brew); then
   e_header "Installing Homebrew"
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  source osx/osx.sh
 else
   e_warning "Homebrew is already installed. skipping.."
+  source osx/osx.sh
 fi
 
 #   --------------------------------------------------
@@ -111,6 +113,7 @@ if test ! $(which node); then
   cp npmrc ~/.npmrc
   mkdir "${HOME}/.npm-packages"
   export PATH="$HOME/.node/bin:$PATH"
+  sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
 else
   e_warning "NodeJS is already installed. skipping.."
 fi
