@@ -117,7 +117,7 @@ fi
 
 # Remove source
 if [ -d ~/dotfiles ]; then
-  rm -R ~/dotfiles
+  sudo rm -R ~/dotfiles
 fi
 
 e_thanks "Author: https://github.com/gokulkrishh \n"
