@@ -4,9 +4,7 @@
 
 > Your cool dev environment is just a few steps away.
 
-## OS X
-
-## Install
+## Install (OS X)
 
 ```sh
 git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfiles && bash install.sh
