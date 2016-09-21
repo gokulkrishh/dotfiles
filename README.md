@@ -1,22 +1,16 @@
-
 <p align="center"><img src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/logo.png" width="150" height="150"/></p>
 
 # dotfiles
 
-> Your development machine is just a few steps away.
+> Your cool dev environment is just a few steps away.
 
-![dotfiles](https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/screenshot.png "screenshot")
-
-
-## OS X
-
-## Install
+## Install (OS X)
 
 ```sh
 git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfiles && bash install.sh
 ```
 
-*Thats all. You are good to go with development in your OSX.*
+*Once install is complete, you are good to go with development in your OSX.*
 
 ## Package overview
 
