@@ -110,7 +110,7 @@
 	<key>deleteSendsBackspace</key>
 	<false/>
 	<key>name</key>
-	<string>Fav</string>
+	<string>Fav 1</string>
 	<key>rowCount</key>
 	<integer>29</integer>
 	<key>scrollOnInput</key>
