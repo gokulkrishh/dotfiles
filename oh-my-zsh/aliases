@@ -20,7 +20,8 @@
 #   -----------------------------
 
 alias s="git status"
-alias gdmb="git branch --merged | grep -v "\*" | xargs -n 1 git branch -d" #To delete all local branches merged with master
+alias gdmb="git branch | grep -v 'master' | xargs git branch -D" # To delete all local branches except master
+
 
 
 #   -----------------------------
