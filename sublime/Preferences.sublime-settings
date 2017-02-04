@@ -56,5 +56,10 @@
 		90
 	],
 	"tab_size": 2,
-	"theme": "Material-Theme-Darker.sublime-theme"
+	"theme": "Material-Theme-Darker.sublime-theme",
+	"ensure_newline_at_eof_on_save": true,
+	"remember_open_files": false,
+	"create_window_at_startup": false,
+	"hot_exit": false,
+	"show_line_endings": true
 }
