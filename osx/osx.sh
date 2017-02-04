@@ -5,14 +5,8 @@ brew install brew-cask
 # cask versions
 brew tap caskroom/versions
 
-# hyperterm
-brew cask install hyperterm
-
-# hyperterm preferences
-ln -sfn $PWD/hyperterm/.hyperterm.js ~/.hyperterm.js
-
-# atom editor
-brew cask install atom
+# sublime text 3 editor
+brew cask install sublime-text3
 
 # all the browsers
 brew cask install google-chrome
