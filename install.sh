@@ -118,6 +118,16 @@ else
   e_warning "NodeJS is already installed. skipping.."
 fi
 
+# Yarn install
+if ! type yarn > /dev/null
+then
+  echo_title_install "yarn"
+  brew install yarn
+else
+  echo_title_update "yarn"
+  yarn self-update
+fi
+
 # Remove source
 if [ -d ~/dotfiles ]; then
   sudo rm -R ~/dotfiles

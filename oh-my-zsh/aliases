@@ -41,6 +41,8 @@ alias w="cd ~/workspace"
 
 alias f="open -a Finder"
 
+alias list-aliases="alias | sed 's/=.*//'"
+
 # Delete & Cleanup
 alias rm="=rm -rf"
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
@@ -92,6 +94,5 @@ alias update='brew update; brew upgrade; brew cleanup; npm update npm -g; npm up
 alias npmi="sudo npm install"
 alias npmg="sudo npm install -g"
 alias npmu="sudo npm update"
-alias bi="bower install"
 
 ## END

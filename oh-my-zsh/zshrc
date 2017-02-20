@@ -10,7 +10,7 @@ export CLICOLOR=true
 # time that oh-my-zsh is loaded.
 ZSH_THEME="dracula"
 
-plugins=(git)
+plugins=(git sublime npm)
 
 # User configuration
 
