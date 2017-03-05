@@ -18,11 +18,11 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfile
 
   - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) as your default in terminal.
 
-  - Copy `.zshrc` config, themes & aliases (check the file .zshrc more details).
+  - Copy `.zshrc` config, themes & aliases (check the file .aliases for more details).
 
-  - [Homebrew](http://brew.sh/) & [Node.JS](https://nodejs.org/en/) (Install node modules globally without sudo)
+  - [Homebrew](http://brew.sh/) & [Node.JS](https://nodejs.org/en/).
 	
-	- Mac apps such as chrome, chrome canary, firefox, opera etc,.
+  - Mac apps such as chrome, chrome canary, firefox, opera etc,.
 
 ### Extra tools
 
