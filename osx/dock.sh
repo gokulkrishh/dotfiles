@@ -8,7 +8,7 @@ defaults write com.apple.Dock autohide-delay -float 0
 defaults write com.apple.dock autohide -bool true
 
 # Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 36
+defaults write com.apple.dock tilesize -int 38
 
 # Don’t animate opening applications from the Dock
 defaults write com.apple.dock launchanim -bool false

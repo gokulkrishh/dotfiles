@@ -28,9 +28,11 @@ alias gdmb="git branch | grep -v 'master' | xargs git branch -D" # To delete all
 #   2. Easy Navigation
 #   -----------------------------
 
+alias o="open"
+alias oo="open ."
 alias ..="cd .."
 alias ...="cd ../.."
-alias -- -="cd -"         # Go to previous dir
+alias --="cd -"
 alias cl="cd ~/codelabs"
 alias w="cd ~/workspace"
 
@@ -41,7 +43,7 @@ alias w="cd ~/workspace"
 
 alias f="open -a Finder"
 
-alias list-aliases="alias | sed 's/=.*//'"
+alias lsa="alias | sed 's/=.*//'"
 
 # Delete & Cleanup
 alias rm="=rm -rf"

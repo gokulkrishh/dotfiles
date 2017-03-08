@@ -12,15 +12,17 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfile
 
 *Once installation is complete, you are good to go with development in your OSX.*
 
-## Package overview
+## Features
 
-  - Setup Git Config globally.
+  - Custom zsh theme (dracula) with git status.
 
   - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) as your default in terminal.
+  
+  - [Shortcuts & Aliases](https://github.com/gokulkrishh/dotfiles/blob/master/docs/Aliases.md).
 
-  - Copy `.zshrc` config, themes & aliases (check the file .aliases for more details).
+  - [Homebrew](http://brew.sh/) 
 
-  - [Homebrew](http://brew.sh/) & [Node.JS](https://nodejs.org/en/).
+  - [Node.JS](https://nodejs.org/en/).
 	
   - Mac apps such as chrome, chrome canary, firefox, opera etc,.
 

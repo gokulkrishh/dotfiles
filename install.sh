@@ -135,6 +135,6 @@ fi
 
 e_thanks "Author: https://github.com/gokulkrishh \n"
 
-echo "🍺  Thats all, restart your terminal."
+echo "🍺  Thats all, Done. Note that some of these changes require a logout/restart to take effect."
 
 # END
