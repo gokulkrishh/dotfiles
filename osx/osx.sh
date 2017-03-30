@@ -8,6 +8,9 @@ brew tap caskroom/versions
 # sublime text 3 editor
 brew cask install sublime-text3
 
+# hyperterm
+brew cask install hyperterm
+
 # all the browsers
 brew cask install google-chrome
 brew cask install google-chrome-canary

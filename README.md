@@ -14,17 +14,19 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfile
 
 ## Features
 
-  - Custom zsh theme (dracula) with git status.
+  - Custom zsh theme (dracula) and colors for [terminal](https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/terminal.png).
 
   - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) as your default in terminal.
   
-  - [Shortcuts & Aliases](https://github.com/gokulkrishh/dotfiles/blob/master/docs/Aliases.md).
+  - [Shortcuts & Aliases](https://github.com/gokulkrishh/dotfiles/blob/master/docs/Aliases.md)
 
   - [Homebrew](http://brew.sh/) 
 
-  - [Node.JS](https://nodejs.org/en/).
+  - [Node.JS](https://nodejs.org/en/)
 	
-  - Mac apps such as chrome, chrome canary, firefox, opera etc,.
+  - Install's OSX apps such as chrome, chrome canary, firefox, opera etc,.
+  
+  - [Sublime text](https://github.com/gokulkrishh/dotfiles/tree/master/sublime), [Atom Editor](https://github.com/gokulkrishh/dotfiles/tree/master/atom) and [Hyperterm](https://github.com/gokulkrishh/dotfiles/blob/master/hyperterm/hyperterm.js) configurations.
 
 ### Extra tools
 
