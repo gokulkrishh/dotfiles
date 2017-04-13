@@ -22,3 +22,5 @@
 
 - [SideBarEnhancements](https://packagecontrol.io/packages/SideBarEnhancements) - Enhancements to sidebar.
 
+- [JavaScript Completions](https://github.com/pichillilorenzo/JavaScript-Completions) - It helps you to write your scripts more quickly with hints and completions.
+
