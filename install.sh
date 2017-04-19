@@ -114,6 +114,10 @@ if test ! $(which node); then
   mkdir "${HOME}/.npm-packages"
   export PATH="$HOME/.node/bin:$PATH"
   sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+
+  # Set npm global config
+  npm config set init.author.name "Gokulakrishnan Kalaikovan"
+  npm config set init.author.email "krishnangokul9@gmail.com"
 else
   e_warning "NodeJS is already installed. skipping.."
 fi
