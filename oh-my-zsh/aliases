@@ -86,6 +86,11 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias st="open -a 'Sublime Text'"
 alias at="open -a 'Atom'"
 
+# Chrome aliases
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
+alias chromium="/Applications/Chromium.app/Contents/MacOS/Chromium"
+
 # Local server using python httpServer
 alias server='python -m SimpleHTTPServer' # To start a local server
 
