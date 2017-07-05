@@ -59,7 +59,7 @@ e_header() {
 }
 
 e_arrow() {
-  printf "\n➜ $@\n"
+  printf "\n ᐅ $@\n"
 }
 
 e_success() {
@@ -71,7 +71,7 @@ e_error() {
 }
 
 e_warning() {
-  printf "\n${tan}➜ %s${reset}\n" "$@"
+  printf "\n${tan}ᐅ %s${reset}\n" "$@"
 }
 
 e_underline() {

@@ -11,7 +11,7 @@
 
 # Old - ➜
 
-PROMPT='%{$fg_bold[green]%}⚡ %{$fg_bold[green]%}%p %{$fg_bold[yellow]%}%c $(git_prompt_info)% %{$reset_color%}'
+PROMPT='%{$fg_bold[green]%}ᐅ %{$fg_bold[green]%}%p %{$fg_bold[yellow]%}%c $(git_prompt_info)% %{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_CLEAN=") %{$fg_bold[green]%}✔ "
 ZSH_THEME_GIT_PROMPT_DIRTY=") %{$fg_bold[yellow]%}✗ "

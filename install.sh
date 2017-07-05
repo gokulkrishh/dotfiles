@@ -95,10 +95,10 @@ fi
 if test ! $(which brew); then
   e_header "Installing Homebrew"
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  source osx/osx.sh
+  # source osx/osx.sh
 else
   e_warning "Homebrew is already installed. skipping.."
-  source osx/osx.sh
+  # source osx/osx.sh
 fi
 
 #   --------------------------------------------------
