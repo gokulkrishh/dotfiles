@@ -1,0 +1,43 @@
+{
+	"editor.fontFamily": "Consolas, Monaco, monospace",
+	"editor.tabSize": 2,
+	"editor.lineHeight": 24,
+	"editor.fontLigatures": true,
+	"editor.autoIndent": true,
+	"editor.fontSize": 14,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.colorTheme": "Monokai-EasyLight",
+	"workbench.activityBar.visible": true,
+	"workbench.sideBar.location": "left",
+	"workbench.colorCustomizations": {
+		"activityBarBadge.background": "#80CBC4",
+		"list.activeSelectionForeground": "#80CBC4",
+		"list.inactiveSelectionForeground": "#80CBC4",
+		"list.highlightForeground": "#80CBC4",
+		"scrollbarSlider.activeBackground": "#80CBC450",
+		"editorSuggestWidget.highlightForeground": "#80CBC4",
+		"textLink.foreground": "#80CBC4"
+	},
+	"window.restoreFullscreen": true,
+	"window.newWindowDimensions": "maximized",
+	"window.zoomLevel": 0.1,
+	"typescript.check.npmIsInstalled": false,
+	"terminal.integrated.shell.osx": "/bin/zsh",
+	"files.insertFinalNewline": true,
+	"search.exclude": {
+    "**/node_modules": true,
+		"**/bower_components": true,
+		"**/build": true
+	},
+	"markdown.preview.breaks": true,
+	"emmet.useNewEmmet": true,
+	"emmet.syntaxProfiles": {
+		"html": {
+			"attr_quotes": "single"
+		},
+		"jsx": {
+			"self_closing_tag": true
+		}
+	},
+}
