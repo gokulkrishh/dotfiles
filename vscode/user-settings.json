@@ -31,7 +31,6 @@
 		"**/build": true
 	},
 	"markdown.preview.breaks": true,
-	"emmet.useNewEmmet": true,
 	"emmet.syntaxProfiles": {
 		"html": {
 			"attr_quotes": "single"
