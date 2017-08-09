@@ -3,13 +3,11 @@
 	"editor.tabSize": 2,
 	"editor.lineHeight": 24,
 	"editor.fontLigatures": true,
-	"editor.autoIndent": true,
+	"window.zoomLevel": 0,
 	"editor.fontSize": 14,
 	"editor.multiCursorModifier": "ctrlCmd",
 	"workbench.iconTheme": "vscode-icons",
-	"workbench.colorTheme": "Monokai-EasyLight",
-	"workbench.activityBar.visible": true,
-	"workbench.sideBar.location": "left",
+	"typescript.check.npmIsInstalled": false,
 	"workbench.colorCustomizations": {
 		"activityBarBadge.background": "#80CBC4",
 		"list.activeSelectionForeground": "#80CBC4",
@@ -19,24 +17,33 @@
 		"editorSuggestWidget.highlightForeground": "#80CBC4",
 		"textLink.foreground": "#80CBC4"
 	},
-	"window.restoreFullscreen": true,
-	"window.newWindowDimensions": "maximized",
-	"window.zoomLevel": 0.1,
-	"typescript.check.npmIsInstalled": false,
+	"workbench.activityBar.visible": true,
 	"terminal.integrated.shell.osx": "/bin/zsh",
+	"workbench.sideBar.location": "left",
 	"files.insertFinalNewline": true,
+	"editor.autoIndent": true,
 	"search.exclude": {
     "**/node_modules": true,
 		"**/bower_components": true,
-		"**/build": true
+		"**/build": true,
+		"**/tmp": true,
+		"**/_site": true,
+		"**/react_bundle.js": true,
+		"**/public/assets": true
 	},
-	"markdown.preview.breaks": true,
+	"window.restoreFullscreen": true,
+	"window.newWindowDimensions": "maximized",
 	"emmet.syntaxProfiles": {
 		"html": {
-			"attr_quotes": "single"
+			"attr_quotes": "double"
 		},
 		"jsx": {
 			"self_closing_tag": true
+		},
+		"erb": {
+			"self_closing_tag": true
 		}
-	}
+	},
+	"markdown.preview.breaks": true,
+	"git.enableSmartCommit": true
 }
