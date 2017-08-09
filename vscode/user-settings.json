@@ -39,9 +39,6 @@
 		},
 		"jsx": {
 			"self_closing_tag": true
-		},
-		"erb": {
-			"self_closing_tag": true
 		}
 	},
 	"markdown.preview.breaks": true,
