@@ -1,3 +1,4 @@
+// Place your settings in this file to overwrite the default settings
 {
 	"editor.fontFamily": "Consolas, Monaco, monospace",
 	"editor.tabSize": 2,
@@ -6,16 +7,17 @@
 	"window.zoomLevel": 0,
 	"editor.fontSize": 14,
 	"editor.multiCursorModifier": "ctrlCmd",
-	"workbench.iconTheme": "vscode-icons",
 	"typescript.check.npmIsInstalled": false,
 	"workbench.colorCustomizations": {
-		"activityBarBadge.background": "#80CBC4",
-		"list.activeSelectionForeground": "#80CBC4",
-		"list.inactiveSelectionForeground": "#80CBC4",
-		"list.highlightForeground": "#80CBC4",
-		"scrollbarSlider.activeBackground": "#80CBC450",
-		"editorSuggestWidget.highlightForeground": "#80CBC4",
-		"textLink.foreground": "#80CBC4"
+		"activityBarBadge.background": "#00BCD4",
+		"list.activeSelectionForeground": "#00BCD4",
+		"list.inactiveSelectionForeground": "#00BCD4",
+		"list.highlightForeground": "#00BCD4",
+		"scrollbarSlider.activeBackground": "#00BCD450",
+		"editorSuggestWidget.highlightForeground": "#00BCD4",
+		"textLink.foreground": "#00BCD4",
+		"progressBar.background": "#00BCD4",
+		"pickerGroup.foreground": "#00BCD4"
 	},
 	"workbench.activityBar.visible": true,
 	"terminal.integrated.shell.osx": "/bin/zsh",
@@ -23,7 +25,7 @@
 	"files.insertFinalNewline": true,
 	"editor.autoIndent": true,
 	"search.exclude": {
-		"**/node_modules": true,
+    "**/node_modules": true,
 		"**/bower_components": true,
 		"**/build": true,
 		"**/tmp": true,
@@ -34,13 +36,12 @@
 	"window.restoreFullscreen": true,
 	"window.newWindowDimensions": "maximized",
 	"emmet.syntaxProfiles": {
-		"html": {
-			"attr_quotes": "double"
-		},
-		"jsx": {
-			"self_closing_tag": true
-		}
+		"javascript": "jsx" 
 	},
+	"emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
 	"markdown.preview.breaks": true,
-	"git.enableSmartCommit": true
+	"git.enableSmartCommit": true,
+	"workbench.iconTheme": "vscode-icons"
 }
