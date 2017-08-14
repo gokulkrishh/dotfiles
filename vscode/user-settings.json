@@ -9,15 +9,6 @@
 	"editor.multiCursorModifier": "ctrlCmd",
 	"typescript.check.npmIsInstalled": false,
 	"workbench.colorCustomizations": {
-		"activityBarBadge.background": "#00BCD4",
-		"list.activeSelectionForeground": "#00BCD4",
-		"list.inactiveSelectionForeground": "#00BCD4",
-		"list.highlightForeground": "#00BCD4",
-		"scrollbarSlider.activeBackground": "#00BCD450",
-		"editorSuggestWidget.highlightForeground": "#00BCD4",
-		"textLink.foreground": "#00BCD4",
-		"progressBar.background": "#00BCD4",
-		"pickerGroup.foreground": "#00BCD4"
 	},
 	"workbench.activityBar.visible": true,
 	"terminal.integrated.shell.osx": "/bin/zsh",
@@ -43,5 +34,6 @@
   },
 	"markdown.preview.breaks": true,
 	"git.enableSmartCommit": true,
-	"workbench.iconTheme": "vscode-icons"
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.colorTheme": "Dracula"
 }
