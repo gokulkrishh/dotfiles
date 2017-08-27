@@ -14,18 +14,14 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfile
 
 ## Features
 
-  - Custom zsh theme (dracula) and colors for [terminal](https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/terminal.png).
+  - [Custom zsh theme](https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/terminal.png) (dracula) and colors for terminal.
 
   - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) as your default in terminal.
   
-  - [Shortcuts, Aliases & Z autocompletion](https://github.com/gokulkrishh/dotfiles/blob/master/docs/Aliases.md)
+  - [Shortcuts, Aliases & Z Autocompletion](https://github.com/gokulkrishh/dotfiles/blob/master/docs/Aliases.md).
 
-  - [Homebrew](http://brew.sh/) 
-
-  - [Node.JS](https://nodejs.org/en/)
+  - Install's [Homebrew](http://brew.sh/) & [Node.JS](https://nodejs.org/en/).
 	
-  - Install's OSX apps such as chrome, chrome canary, firefox, opera etc,.
-  
   - [VSCode Editor](https://github.com/gokulkrishh/dotfiles/tree/master/vscode) configuration.
 
 ### Extra
