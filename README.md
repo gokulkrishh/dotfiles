@@ -30,9 +30,8 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfile
 
  - [Tools I Use For Web Development](https://gokulkrishh.github.io/tools/2017/08/10/tools-i-use-for-web-development.html) such as browsers, terminal, editors, mac apps, chrome extensions, perf tools etc.
 
-#### Features Improvements
-Found a bug, create an issue or new feature give me a PR. Lets reduce the pain of setting up machine for development from scratch.
+*Found a bug or want a new feature create an issue. Lets reduce the pain of setting up machine for development from scratch.*
 
-#### Licence
+### Licence
 
 MIT © [Gokulakrishnan Kalaikovan](http://github.com/gokulkrishh)   
