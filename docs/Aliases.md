@@ -22,3 +22,9 @@
 | `st` | Open sublime text. Eg: `st .` opens sublime for current directory |
 | `server` | Python server for current directory |
 | `update` | To update brew, npm, gem and their installed packages |
+
+# Z Autocompletion
+
+| Alias | Description |
+| ----- | ----------- |
+| `z <folder-name>` | `` | cd into your recent folders

@@ -18,7 +18,7 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfile
 
   - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) as your default in terminal.
   
-  - [Shortcuts & Aliases](https://github.com/gokulkrishh/dotfiles/blob/master/docs/Aliases.md)
+  - [Shortcuts, Aliases & z autocompletion](https://github.com/gokulkrishh/dotfiles/blob/master/docs/Aliases.md)
 
   - [Homebrew](http://brew.sh/) 
 
