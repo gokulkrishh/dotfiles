@@ -28,7 +28,7 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfile
 
 ### Extra
 
- - [Tools I Use For Web Development](https://gokulkrishh.github.io/tools/2017/08/10/tools-i-use-for-web-development.html) Tools I use for Web Development like browsers, terminal, editors, mac apps, chrome extensions, perf tools etc.
+ - [Tools I Use For Web Development](https://gokulkrishh.github.io/tools/2017/08/10/tools-i-use-for-web-development.html) such as browsers, terminal, editors, mac apps, chrome extensions, perf tools etc.
 
 #### Features Improvements
 Found a bug, create an issue or new feature give me a PR. Lets reduce the pain of setting up machine for development from scratch.
