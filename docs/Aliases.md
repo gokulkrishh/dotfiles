@@ -19,6 +19,8 @@
 
 ## Utilities 
 
+| Alias | Description |
+| ----- | ----------- |
 | `ip` | Show your current ip address |
 | `sca` | Take screenshot of a window of your choice and Eg: `sca test.png` or `sca test.jpg` |
 | `logoff` | To logoff |
