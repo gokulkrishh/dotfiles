@@ -12,9 +12,11 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfile
 
 *Once installation is complete, you are good to go with development in your OSX.*
 
+<img src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/teminal.jpg" alt="screenshot"/>
+
 ## Features
 
-  - [Custom zsh theme](https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/terminal.png) (dracula) and colors for terminal.
+  - Custom zsh theme (dracula), colors & font for terminal.
 
   - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) as your default in terminal.
   
