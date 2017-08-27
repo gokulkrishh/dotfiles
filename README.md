@@ -12,7 +12,7 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfile
 
 *Once installation is complete, you are good to go with development in your OSX.*
 
-<img src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/teminal.jpg" alt="screenshot"/>
+<img src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/terminal.jpg" alt="screenshot"/>
 
 ## Features
 
