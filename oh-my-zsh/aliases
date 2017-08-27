@@ -20,9 +20,6 @@
 #   -----------------------------
 
 alias s="git status"
-alias gdmb="git branch | grep -v 'master' | xargs git branch -D" # To delete all local branches except master
-
-
 
 #   -----------------------------
 #   2. Easy Navigation
@@ -43,7 +40,7 @@ alias w="cd ~/workspace"
 
 alias f="open -a Finder"
 
-alias lsa="alias | sed 's/=.*//'"
+alias la="alias | sed 's/=.*//'"
 
 # Delete & Cleanup
 alias rm="=rm -rf"
@@ -51,7 +48,6 @@ alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
 # IP Address
 alias ip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
-alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
 # Capture Screenshot
 alias sca="screencapture -c -W -P"
@@ -97,9 +93,12 @@ alias server='python -m SimpleHTTPServer' # To start a local server
 # To update brew, npm, gem and their installed packages
 alias update='brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
-# NODE & BOWER
+# NPM & Yarn Shortcuts
+
 alias npmi="sudo npm install"
 alias npmg="sudo npm install -g"
-alias npmu="sudo npm update"
+alias ya="yarn add"
+alias yad="yarn add -D"
+alias yag="yarn global add"
 
 ## END
