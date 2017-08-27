@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-	"editor.fontFamily": "Consolas, Monaco, monospace",
+	"editor.fontFamily": "'Operator Mono', Consolas, Monaco, monospace",
 	"editor.tabSize": 2,
 	"editor.lineHeight": 24,
 	"editor.fontLigatures": true,
@@ -9,6 +9,7 @@
 	"editor.multiCursorModifier": "ctrlCmd",
 	"typescript.check.npmIsInstalled": false,
 	"workbench.colorCustomizations": {
+		"activityBarBadge.background": "#198AFF"
 	},
 	"workbench.activityBar.visible": true,
 	"terminal.integrated.shell.osx": "/bin/zsh",
@@ -22,7 +23,11 @@
 		"**/tmp": true,
 		"**/_site": true,
 		"**/react_bundle.js": true,
+		"**/vendor_bundle.js": true,
 		"**/public/assets": true
+	},
+	"files.exclude": {
+    "**/node_modules/": true
 	},
 	"window.restoreFullscreen": true,
 	"window.newWindowDimensions": "maximized",
@@ -35,5 +40,9 @@
 	"markdown.preview.breaks": true,
 	"git.enableSmartCommit": true,
 	"workbench.iconTheme": "vscode-icons",
-	"workbench.colorTheme": "Dracula"
+	"workbench.colorTheme": "Dracula",
+	"javascript.validate.enable": false,
+	"workbench.startupEditor": "welcomePage",
+	"vscode-exports-autocomplete.quoteCharOverride": "\"",
+	"vscode-exports-autocomplete.addSpacingAroundCurlyBraces": true
 }

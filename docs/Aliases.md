@@ -27,4 +27,4 @@
 
 | Alias | Description |
 | ----- | ----------- |
-| `z <folder-name>` | `` | cd into your recent folders
+| `z <folder-name>` | cd into your recent folders
