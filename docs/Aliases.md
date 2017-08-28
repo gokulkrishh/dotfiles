@@ -66,6 +66,6 @@
 | `npmi` | NPM install |
 | `npmi <module-name>` | NPM install |
 | `npmg <module-name>` | NPM install globally |
-| `ya <module-name>` | Yarn add |
-| `yad <module-name>` | Yarn add in devDependency |
-| `yag <module-name>` | Yarn add globally |
+| `ya   <module-name>` | Yarn add |
+| `yad  <module-name>` | Yarn add in devDependency |
+| `yag  <module-name>` | Yarn add globally |
