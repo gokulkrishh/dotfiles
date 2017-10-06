@@ -30,9 +30,25 @@ source $HOME/.aliases
 ## Setting vim as default editor
 export EDITOR="vim"
 
+## Postgres path
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+
+## Adding RVM & other rails related to the path
+export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
+
+## Yarn pkg manager path
+export PATH="$HOME/.yarn/bin:$PATH"
+
+## NVM path
+export NVM_DIR="$HOME/.nvm"
+source $(brew --prefix nvm)/nvm.sh
+
 ## To set node packages path
 ## Allow global npm install without sudo
-## Source: s(https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md)
+## Source: (https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md)
 NPM_PACKAGES="${HOME}/.npm-packages"
 NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 PATH="$NPM_PACKAGES/bin:$PATH"
@@ -40,13 +56,6 @@ PATH="$NPM_PACKAGES/bin:$PATH"
 ## Unset manpath so we can inherit from /etc/manpath via the `manpath`
 unset MANPATH ## delete if you already modified MANPATH elsewhere in your config
 MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
-
-## Yarn pkd manager path
-export PATH="$HOME/.yarn/bin:$PATH"
-
-## NVM path
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  ## This loads nvm
 
 clear
 
