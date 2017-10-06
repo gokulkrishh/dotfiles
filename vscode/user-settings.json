@@ -2,9 +2,10 @@
 {
 	"editor.fontFamily": "'Operator Mono', Consolas, Monaco, monospace",
 	"editor.tabSize": 2,
-	"editor.lineHeight": 24,
+	"editor.lineHeight": 25,
 	"editor.fontLigatures": true,
 	"window.zoomLevel": 0,
+	"editor.letterSpacing": 0.5,
 	"editor.fontSize": 14,
 	"editor.multiCursorModifier": "ctrlCmd",
 	"typescript.check.npmIsInstalled": false,
@@ -24,6 +25,8 @@
 		"**/_site": true,
 		"**/react_bundle.js": true,
 		"**/vendor_bundle.js": true,
+		"**/react-bundle.js.map": true,
+		"**/react-bundle.js": true,
 		"**/public/assets": true
 	},
 	"files.exclude": {
@@ -32,7 +35,7 @@
 	"window.restoreFullscreen": true,
 	"window.newWindowDimensions": "maximized",
 	"emmet.syntaxProfiles": {
-		"javascript": "jsx" 
+		"javascript": "jsx"
 	},
 	"emmet.includeLanguages": {
     "javascript": "javascriptreact"
@@ -40,9 +43,11 @@
 	"markdown.preview.breaks": true,
 	"git.enableSmartCommit": true,
 	"workbench.iconTheme": "vscode-icons",
-	"workbench.colorTheme": "Dracula",
+	"workbench.colorTheme": "Cobalt2",
 	"javascript.validate.enable": false,
-	"workbench.startupEditor": "welcomePage",
-	"vscode-exports-autocomplete.quoteCharOverride": "\"",
-	"vscode-exports-autocomplete.addSpacingAroundCurlyBraces": true
+	"workbench.startupEditor": "none",
+	"files.associations": {
+		"*.js": "javascript"
+	},
+	"files.trimTrailingWhitespace": true
 }

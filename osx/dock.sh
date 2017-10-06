@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Set Dark Theme to Dock & Fullscreen
 defaults write NSGlobalDomain AppleInterfaceStyle Dark;
 

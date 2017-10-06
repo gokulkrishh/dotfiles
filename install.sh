@@ -1,32 +1,19 @@
+#!/bin/bash
 
+# Welcome!!
+# Custom dotfiles to get you started with OS X machine for development.
+# Author: https://github.com/gokulkrishh
+# Source: https://github.com/gokulkrishh/dotfiles
 
-#   ----------------------------------------------------------------
-#
-#   Welcome!!
-#
-#   dotfiles to get you started with OS X machine for development.
-#
-#   Author: https://github.com/gokulkrishh
-#
-#   Sections:
-#   1.  Git Configs
-#   2.  Install Oh My Zsh & Aliases & Shortcuts
-#   3.  Install Homebrew
-#   4.  Install NodeJS
-#
-#   ----------------------------------------------------------------
+## Custom color codes & utility functions
+source helper/utility.sh
 
-# Custom color codes & utility functions
-source osx/utility.sh
-
-# Terminal & Dock Setup
+## Terminal & Dock setup
 source osx/screen.sh
 source osx/dock.sh
 source osx/terminal.sh
 
-#   -----------------------------
-#   Welcome msg
-#   -----------------------------
+# Welcome msg
 
 e_bold "${tan}┌──────────────────────────────────────────────────────────────┐
 |                                                              |
@@ -38,21 +25,16 @@ e_bold "${tan}┌─────────────────────
 |                                                              |
 └──────────────────────────────────────────────────────────────┘"
 
-
-# Author
-
-#   -----------------------------
-#   1.  Git configuration
-#   -----------------------------
+# 1. Git configuration
 
 e_header "Setup git config (global)"
-cp gitignore ~/.gitignore_global  # Adding .gitignore global
+cp gitignore ~/.gitignore_global  ## Adding .gitignore global
 git config --global core.excludesfile "${HOME}/.gitignore_global"
 
 ask "${blue} (Option) Enter Your Github Email: "
 read -r emailId
 if is_empty $emailId; then
-  git config --global user.email "$emailId" # Git Email Id
+  git config --global user.email "$emailId" ## Git Email Id
   e_success "Email is set"
 else
   e_error "Not set"
@@ -61,77 +43,78 @@ fi
 ask "${blue} (Option) Enter Your Github Username: "
 read -r userName
 if is_empty $userName; then
-  git config --global user.name "$userName" # Git Username
+  git config --global user.name "$userName" ## Git Username
   e_success "Username is set"
 else
   e_error "Not set"
 fi
 
-
-#   -------------------------------------------------------
-#   2.  Install Oh My Zsh/Hyperterm & Aliases
-#   -------------------------------------------------------
+# 2. Install Oh-My-Zsh & custom aliases
 
 ZSH=~/.oh-my-zsh
 
 if [ -d "$ZSH" ]; then
-  e_warning "Oh My Zsh is already installed. skipping.."
+  e_warning "Oh My Zsh is already installed. Skipping.."
 else
   e_header "Installing Oh My Zsh..."
   curl -L http://install.ohmyz.sh | sh
 
-  #To install ZSH themes & aliases
+  ## To install ZSH themes & aliases
   e_header "Copying ZSH themes & aliases..."
   e_note "Check .aliases file for more details."
-  cp oh-my-zsh/aliases ~/.aliases                                        # Copy aliases
-  cp oh-my-zsh/zshrc ~/.zshrc                                            # Copy .zshrc config
-  cp oh-my-zsh/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme   # Copy dracula theme
-  cp oh-my-zsh/z ~/z                                                     # z autocompletion
+  cp oh-my-zsh/aliases ~/.aliases                                        ## Copy aliases
+  cp oh-my-zsh/zshrc ~/.zshrc                                            ## Copy zshrc configs
+  cp oh-my-zsh/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme   ## Copy custom dracula theme
+  cp -R oh-my-zsh/z ~/z                                                     ## z autocompletion
 fi
 
-#   -----------------------------
-#   3.  Install Homebrew
-#   -----------------------------
+## Create codelabs & workspace directory
+mkdir codelabs
+mkdir workspace
+
+# 3. Install Homebrew
 
 if test ! $(which brew); then
   e_header "Installing Homebrew"
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
-  e_warning "Homebrew is already installed. skipping.."
+  e_warning "Homebrew is already installed. Skipping.."
 fi
 
-#   --------------------------------------------------
-#   4.  Install NodeJS
-#   --------------------------------------------------
+# 4. Install NodeJS
 
-if test ! $(which node); then
-  e_header "Installing NodeJS"
-  brew install node
+if test ! $(which nvm); then
+  e_header "Installing nvm.."
 
-  # To setup npm install/update -g without sudo
+  brew install nvm
+
+  nvm install stable ## Installing stable version of node
+
+  nvm use stable ## Setting stable as default node
+
+  nvm use --delete-prefix stable
+
+  ## To setup npm install/update -g without sudo
   cp npmrc ~/.npmrc
   mkdir "${HOME}/.npm-packages"
   export PATH="$HOME/.node/bin:$PATH"
   sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
 
-  # Set npm global config
-  npm config set init.author.name "Gokulakrishnan Kalaikovan"
-  npm config set init.author.email "krishnangokul9@gmail.com"
+  ## Set npm global config
+  npm config set init.author.name "Gokulakrishnan Kalaikovan" ## Replace it with your name
+  npm config set init.author.email "krishnangokul9@gmail.com" ## Replace it with your email id
 else
-  e_warning "NodeJS is already installed. skipping.."
+  e_warning "NVM is already installed. Skipping.."
 fi
 
-# Yarn install
+## Yarn install
 if ! type yarn > /dev/null
 then
-  echo_title_install "yarn"
+  e_header "Install yarn.."
   brew install yarn
-else
-  echo_title_update "yarn"
-  yarn self-update
 fi
 
-# Remove source
+## Remove cloned dotfiles from system
 if [ -d ~/dotfiles ]; then
   sudo rm -R ~/dotfiles
 fi

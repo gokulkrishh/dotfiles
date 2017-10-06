@@ -19,12 +19,12 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfile
   - Custom [zsh theme (dracula), colors & font](https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/terminal.jpg) for terminal.
 
   - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) as your default in terminal.
-  
-  - [Shortcuts, Aliases](https://github.com/gokulkrishh/dotfiles/blob/master/docs/Aliases.md).
 
-  - [Homebrew](http://brew.sh/) & [Node.JS](https://nodejs.org/en/).
-	
-  - [VSCode Editor](https://github.com/gokulkrishh/dotfiles/tree/master/vscode) configuration.
+  - [Shortcuts, Aliases & lot more](https://github.com/gokulkrishh/dotfiles/blob/master/docs/Aliases.md).
+
+  - [Homebrew](http://brew.sh/), [Node.JS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/).
+
+  - [VSCode Editor](https://github.com/gokulkrishh/dotfiles/tree/master/vscode) custom configurations.
 
 ### Extra
 
@@ -34,4 +34,4 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfile
 
 ### Licence
 
-MIT © [Gokulakrishnan Kalaikovan](http://github.com/gokulkrishh)   
+MIT © [Gokulakrishnan Kalaikovan](http://github.com/gokulkrishh)

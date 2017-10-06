@@ -1,24 +1,23 @@
-##GIT IGNORE
-# Take and modified from Matt Gaunt => https://github.com/gauntface/dotfiles
+# Custom git ignore file
 
-#####
-# OS X temporary files that should never be committed
-
+## Unwanted hidden files
 .DS_Store
 *.swp
 *.lock
 profile
 
-# Compiled Python files
+## Compiled Python files
 *.pyc
 
-# Folder view configuration files
+## Folder view configuration files
 Desktop.ini
 
 # Thumbnail cache files
 ._*
 Thumbs.db
 
-# Files that might appear on external disks
+## Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+## END

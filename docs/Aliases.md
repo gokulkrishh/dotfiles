@@ -7,7 +7,7 @@
 | `o` | `open` |
 | `oo` | `open .` |
 | `..` | Go back to parent folder |
-| `--` | Go to previous opened folder |
+| `cd -` | Go to previous opened folder |
 | `cl` | Open codelabs folder |
 | `w`  | Open workspace folder |
 | `f`  | Open finder |
@@ -17,7 +17,7 @@
 | `cleanup` | Delete .DS_Store files |
 | `la` | To list all aliases  |
 
-## Utilities 
+## Utilities
 
 | Alias | Description |
 | ----- | ----------- |
@@ -38,14 +38,14 @@
 | Alias | Description |
 | ----- | ----------- |
 | `g` | Git command |
-| `s` | Show git status | 
-| `ggpush` | Git push into current branch | 
-| `ggpull` | Git pull into current branch | 
-| `gf` | Git fetch | 
-| `gc -m "My commit msg"` | Git commit with commit message | 
+| `s` | Show git status |
+| `ggpush` | Git push into current branch |
+| `ggpull` | Git pull into current branch |
+| `gf` | Git fetch |
+| `gc -m "My commit msg"` | Git commit with commit message |
 | `gco <branch-name>` | Git checkout to a branch |
-| `gco <file-name>` | Git checkout a file | 
-| `ga .` | Git add all files | 
+| `gco <file-name>` | Git checkout a file |
+| `ga .` | Git add all files |
 | `ga <file-name>` | Git add a file |
 | `gco -` | Git checkout to previous branch |
 | `gb -M <branch-name>` | Git create a new branch & checkout to that branch |
@@ -64,8 +64,7 @@
 | Alias | Description |
 | ----- | ----------- |
 | `npmi` | NPM install |
-| `npmi <module-name>` | NPM install |
-| `npmg <module-name>` | NPM install globally |
-| `ya   <module-name>` | Yarn add |
-| `yad  <module-name>` | Yarn add in devDependency |
-| `yag  <module-name>` | Yarn add globally |
+| `npmg` | NPM install globally |
+| `ya` | Yarn add |
+| `yad` | Yarn add in devDependency |
+| `yag` | Yarn add globally |

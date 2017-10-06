@@ -1,57 +1,53 @@
-# Path to your oh-my-zsh installation.
+## Path to your oh-my-zsh installation
 export ZSH=$HOME/.oh-my-zsh
 
-# z autocompletion for folders
+## z autocompletion for folders
 . z/z.sh
 
 export LSCOLORS='exfxcxdxbxegedabagacad'
 export CLICOLOR=true
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+## Set name of the theme to load.
+## Look in ~/.oh-my-zsh/themes/
 ZSH_THEME="dracula"
 
+## oh-my-zsh plugins
 plugins=(git sublime npm)
 
 # User configuration
 
+## Path
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-# export MANPATH="/usr/local/man:$MANPATH"
+#export MANPATH="/usr/local/man:$MANPATH"
 
+## Path to oh-my-zsh script
 source $ZSH/oh-my-zsh.sh
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Setting zsh aliases
+## custom aliases
 source $HOME/.aliases
 
-# Setting atom as default editor
+## Setting vim as default editor
 export EDITOR="vim"
 
-# To set node packages path
-# Allow global npm install without sudo (https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md)
+## To set node packages path
+## Allow global npm install without sudo
+## Source: s(https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md)
 NPM_PACKAGES="${HOME}/.npm-packages"
 NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 PATH="$NPM_PACKAGES/bin:$PATH"
 
-# Unset manpath so we can inherit from /etc/manpath via the `manpath`
-# command
-unset MANPATH # delete if you already modified MANPATH elsewhere in your config
+## Unset manpath so we can inherit from /etc/manpath via the `manpath`
+unset MANPATH ## delete if you already modified MANPATH elsewhere in your config
 MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
-# Yarn path
+## Yarn pkd manager path
 export PATH="$HOME/.yarn/bin:$PATH"
 
-# NVM path
+## NVM path
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  ## This loads nvm
 
 clear
+
+## END
