@@ -4,6 +4,12 @@
 
 *Your cool dev environment is just a few steps away.*
 
+## Clone the repo
+
+```bash
+git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles
+```
+
 ## Before installation
 
 > Add your email, username for npm global config
@@ -16,7 +22,7 @@ npm config set init.author.email "Your email id" ## Replace it with your email i
 ## Install (OSX)
 
 ```bash
-git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfiles && bash install.sh
+cd ~/dotfiles && bash install.sh
 ```
 
 *Once installation is complete, you are good to go with development in your OSX.*
