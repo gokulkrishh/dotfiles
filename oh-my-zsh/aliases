@@ -12,10 +12,9 @@ alias o="open"
 alias oo="open ."
 alias ..="cd .."
 alias ...="cd ../.."
-alias --="cd -"
 
 ## Make dir and cd into it
-alias mkdir="mkdir -p "$@" && cd "$_";"
+alias mkd="mkdir -p "$@" && cd "$_";"
 
 # 3. Tools & Utilities
 

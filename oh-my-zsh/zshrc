@@ -1,9 +1,6 @@
 ## Path to your oh-my-zsh installation
 export ZSH=$HOME/.oh-my-zsh
 
-## z autocompletion for folders
-. z/z.sh
-
 export LSCOLORS='exfxcxdxbxegedabagacad'
 export CLICOLOR=true
 
@@ -12,7 +9,7 @@ export CLICOLOR=true
 ZSH_THEME="dracula"
 
 ## oh-my-zsh plugins
-plugins=(git sublime npm)
+plugins=(git npm)
 
 # User configuration
 
