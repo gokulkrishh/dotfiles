@@ -36,6 +36,10 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
 
+## Adding z script path for easy cding...
+## Source: https://github.com/rupa/z
+echo . ~/dotfiles/oh-my-zsh/z.sh >> ~/.zshrc
+
 ## Yarn pkg manager path
 export PATH="$HOME/.yarn/bin:$PATH"
 
