@@ -1,65 +1,66 @@
 {
-	"editor.fontFamily": "'Operator Mono', Consolas, Monaco, monospace",
-	"editor.tabSize": 2,
-	"editor.lineHeight": 25,
-	"editor.fontLigatures": true,
-	"window.zoomLevel": 0,
-	"editor.letterSpacing": 0.5,
-	"editor.fontSize": 14,
-	"editor.multiCursorModifier": "ctrlCmd",
-	"typescript.check.npmIsInstalled": false,
-	"workbench.colorCustomizations": {
-		"activityBarBadge.background": "#198AFF"
-	},
-	"workbench.activityBar.visible": true,
-	"terminal.integrated.shell.osx": "/bin/zsh",
-	"workbench.sideBar.location": "left",
-	"files.insertFinalNewline": true,
-	"editor.autoIndent": true,
-	"search.exclude": {
-		"**/node_modules": true,
-		"**/bower_components": true,
-		"**/build": true,
-		"**/public": true,
-		"**/tmp": true,
-		"**/_site": true,
-		"**/react_bundle.js": true,
-		"**/react-styles.css.map": true,
-		"**/react-styles.css": true,
-		"**/vendor_bundle.js": true,
-		"**/react-bundle.js.map": true,
-		"**/react-bundle.js": true,
-		"**/public/assets": true
-	},
-	"files.exclude": {
-		"**/node_modules/": true
-	},
-	"window.restoreFullscreen": true,
-	"window.newWindowDimensions": "maximized",
-	"emmet.syntaxProfiles": {
-		"javascript": "jsx"
-	},
-	"emmet.includeLanguages": {
-		"javascript": "javascriptreact"
-	},
-	"markdown.preview.breaks": true,
-	"git.enableSmartCommit": true,
-	"javascript.validate.enable": false,
-	"workbench.startupEditor": "none",
-	"files.associations": {
-		"*.js": "javascriptreact"
-	},
-	"files.trimTrailingWhitespace": true,
-	"workbench.iconTheme": "vscode-icons",
-	"workbench.colorTheme": "Cobalt2",
-	"sublimeTextKeymap.promptV3Features": true,
-	"editor.snippetSuggestions": "top",
-	"vsicons.dontShowNewVersionMessage": true,
-	"editor.formatOnSave": true,
-	"prettier.printWidth": 140,
-	"prettier.useTabs": true,
-	"prettier.cssEnable": ["css", "scss"],
-	"workbench.panel.location": "bottom",
-	"flowide.enabled": true,
-	"flowide.useCodeSnippetsOnFunctionSuggest": true
+  "editor.fontFamily": "'Operator Mono', Consolas, Monaco, monospace",
+  "editor.tabSize": 2,
+  "editor.lineHeight": 25,
+  "editor.fontLigatures": true,
+  "window.zoomLevel": 0,
+  "editor.letterSpacing": 0.5,
+  "editor.fontSize": 13,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "typescript.check.npmIsInstalled": false,
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#198AFF"
+  },
+  "workbench.activityBar.visible": true,
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "workbench.sideBar.location": "left",
+  "files.insertFinalNewline": true,
+  "editor.autoIndent": true,
+  "search.exclude": {
+    "**/*.map": true,
+    "**/node_modules": true,
+    "**/*.css": true,
+    "**/bower_components": true,
+    "**/build": true,
+    "**/public": true,
+    "**/tmp": true,
+    "**/_site": true,
+    "**/react_bundle.js": true,
+    "**/react_bundle.js.map": true,
+    "**/react-styles.css.map": true,
+    "**/react-styles.css": true,
+    "**/bundle": true,
+    "**/react-bundle.js.map": true,
+    "**/react-bundle.js": true,
+    "**/public/assets": true
+  },
+  "files.exclude": {
+    "**/node_modules/": true,
+    "**/react-styles.css.map": true,
+    "**/react_bundle.js.map": true
+  },
+  "window.restoreFullscreen": true,
+  "window.newWindowDimensions": "maximized",
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "markdown.preview.breaks": true,
+  "git.enableSmartCommit": true,
+  "javascript.validate.enable": false,
+  "workbench.startupEditor": "none",
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "files.trimTrailingWhitespace": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "An Old Hope",
+  "sublimeTextKeymap.promptV3Features": true,
+  "editor.snippetSuggestions": "top",
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.formatOnSave": true,
+  "prettier.printWidth": 140,
+  "prettier.singleQuote": false
 }

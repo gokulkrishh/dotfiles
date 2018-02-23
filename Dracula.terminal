@@ -15,6 +15,8 @@
 	</data>
 	<key>BlinkText</key>
 	<true/>
+	<key>BookmarkRestorations</key>
+	<true/>
 	<key>CursorBlink</key>
 	<false/>
 	<key>CursorColor</key>
@@ -33,7 +35,7 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGGBlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
 	AAGGoKQHCBESVSRudWxs1AkKCwwNDg8QVk5TU2l6ZVhOU2ZGbGFnc1ZOU05hbWVWJGNs
-	YXNzI0AsAAAAAAAAEBCAAoADXxART3BlcmF0b3JNb25vLUJvb2vSExQVFlokY2xhc3Nu
+	YXNzI0AqAAAAAAAAEBCAAoADXxART3BlcmF0b3JNb25vLUJvb2vSExQVFlokY2xhc3Nu
 	YW1lWCRjbGFzc2VzVk5TRm9udKIVF1hOU09iamVjdF8QD05TS2V5ZWRBcmNoaXZlctEa
 	G1Ryb290gAEIERojLTI3PEJLUltiaXJ0dniMkZylrK+4ys3SAAAAAAAAAQEAAAAAAAAA
 	HAAAAAAAAAAAAAAAAAAAANQ=
@@ -63,6 +65,8 @@
 	<false/>
 	<key>ShowActiveProcessInTitle</key>
 	<true/>
+	<key>ShowActivityIndicatorInTab</key>
+	<true/>
 	<key>ShowCommandKeyInTitle</key>
 	<false/>
 	<key>ShowComponentsWhenTabHasCustomTitle</key>
@@ -72,13 +76,19 @@
 	<key>ShowRepresentedURLInTabTitle</key>
 	<true/>
 	<key>ShowRepresentedURLInTitle</key>
-	<false/>
+	<true/>
 	<key>ShowRepresentedURLPathInTabTitle</key>
 	<true/>
+	<key>ShowRepresentedURLPathInTitle</key>
+	<false/>
 	<key>ShowShellCommandInTitle</key>
 	<false/>
 	<key>ShowTTYNameInTabTitle</key>
 	<false/>
+	<key>ShowTTYNameInTitle</key>
+	<false/>
+	<key>ShowTerminalInDockIcon</key>
+	<true/>
 	<key>ShowWindowSettingsNameInTitle</key>
 	<false/>
 	<key>TextBoldColor</key>
@@ -106,13 +116,13 @@
 	<key>VisualBellOnlyWhenMuted</key>
 	<false/>
 	<key>columnCount</key>
-	<integer>120</integer>
+	<integer>135</integer>
 	<key>deleteSendsBackspace</key>
 	<false/>
 	<key>name</key>
-	<string>Dracula</string>
+	<string>Dracula 2</string>
 	<key>rowCount</key>
-	<integer>29</integer>
+	<integer>30</integer>
 	<key>scrollOnInput</key>
 	<true/>
 	<key>shellExitAction</key>
