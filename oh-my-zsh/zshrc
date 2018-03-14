@@ -9,7 +9,7 @@ export CLICOLOR=true
 ZSH_THEME="dracula"
 
 ## oh-my-zsh plugins
-plugins=(git npm)
+plugins=(git npm zsh-nvm)
 
 # User configuration
 
@@ -44,8 +44,8 @@ echo . ~/dotfiles/oh-my-zsh/z.sh >> ~/.zshrc
 export PATH="$HOME/.yarn/bin:$PATH"
 
 ## NVM path
-export NVM_DIR="$HOME/.nvm"
-source $(brew --prefix nvm)/nvm.sh
+export NVM_LAZY_LOAD=true
+export NVM_AUTO_USE=true
 
 ## To set node packages path
 ## Allow global npm install without sudo

@@ -86,13 +86,7 @@ fi
 if test ! $(which nvm); then
   e_header "Installing nvm.."
 
-  brew install nvm
-
-  nvm install stable ## Installing stable version of node
-
-  nvm use stable ## Setting stable as default node
-
-  nvm use --delete-prefix stable
+  git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
 
   ## To setup npm install/update -g without sudo
   cp npmrc ~/.npmrc
