@@ -65,7 +65,7 @@ else
   cp oh-my-zsh/aliases ~/.aliases                                        ## Copy aliases
   cp oh-my-zsh/zshrc ~/.zshrc                                            ## Copy zshrc configs
   cp oh-my-zsh/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme   ## Copy custom dracula theme
-  cp -R oh-my-zsh/z ~/z                                                     ## z autocompletion
+  cp oh-my-zsh/z.sh ~/z.sh                                               ## Copy z.sh autocompletion file
 fi
 
 ## Create codelabs & workspace directory
@@ -81,10 +81,10 @@ else
   e_warning "Homebrew is already installed. Skipping.."
 fi
 
-# 4. Install NodeJS
+# 4. Install ZSH NVM
 
 if test ! $(which nvm); then
-  e_header "Installing nvm.."
+  e_header "Installing zsh-nvm.."
 
   git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
 

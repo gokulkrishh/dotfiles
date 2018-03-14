@@ -9,14 +9,18 @@ export CLICOLOR=true
 ZSH_THEME="dracula"
 
 ## oh-my-zsh plugins
-plugins=(git npm zsh-nvm)
+plugins=(git zsh-nvm npm)
 
 # User configuration
 
-## Path
+## RVM & MANPath
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 #export MANPATH="/usr/local/man:$MANPATH"
+
+## NVM path (should be before sourcing zsh)
+export NVM_LAZY_LOAD=true
+export NVM_AUTO_USE=true
 
 ## Path to oh-my-zsh script
 source $ZSH/oh-my-zsh.sh
@@ -36,16 +40,8 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
 
-## Adding z script path for easy cding...
-## Source: https://github.com/rupa/z
-echo . ~/dotfiles/oh-my-zsh/z.sh >> ~/.zshrc
-
 ## Yarn pkg manager path
 export PATH="$HOME/.yarn/bin:$PATH"
-
-## NVM path
-export NVM_LAZY_LOAD=true
-export NVM_AUTO_USE=true
 
 ## To set node packages path
 ## Allow global npm install without sudo
@@ -57,6 +53,10 @@ PATH="$NPM_PACKAGES/bin:$PATH"
 ## Unset manpath so we can inherit from /etc/manpath via the `manpath`
 unset MANPATH ## delete if you already modified MANPATH elsewhere in your config
 MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+
+## Adding z script path for easy cding...
+## Source: https://github.com/rupa/z
+. ~/z.sh
 
 clear
 
