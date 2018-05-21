@@ -35,7 +35,7 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGGBlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
 	AAGGoKQHCBESVSRudWxs1AkKCwwNDg8QVk5TU2l6ZVhOU2ZGbGFnc1ZOU05hbWVWJGNs
-	YXNzI0AqAAAAAAAAEBCAAoADXxART3BlcmF0b3JNb25vLUJvb2vSExQVFlokY2xhc3Nu
+	YXNzI0AoAAAAAAAAEBCAAoADXxART3BlcmF0b3JNb25vLUJvb2vSExQVFlokY2xhc3Nu
 	YW1lWCRjbGFzc2VzVk5TRm9udKIVF1hOU09iamVjdF8QD05TS2V5ZWRBcmNoaXZlctEa
 	G1Ryb290gAEIERojLTI3PEJLUltiaXJ0dniMkZylrK+4ys3SAAAAAAAAAQEAAAAAAAAA
 	HAAAAAAAAAAAAAAAAAAAANQ=
@@ -57,6 +57,8 @@
 	dmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCVoKmxtL3P0tcAAAAAAAABAQAAAAAA
 	AAAZAAAAAAAAAAAAAAAAAAAA2Q==
 	</data>
+	<key>ShouldRestoreContent</key>
+	<false/>
 	<key>ShowActiveProcessArgumentsInTabTitle</key>
 	<true/>
 	<key>ShowActiveProcessArgumentsInTitle</key>
@@ -80,7 +82,7 @@
 	<key>ShowRepresentedURLPathInTabTitle</key>
 	<true/>
 	<key>ShowRepresentedURLPathInTitle</key>
-	<false/>
+	<true/>
 	<key>ShowShellCommandInTitle</key>
 	<false/>
 	<key>ShowTTYNameInTabTitle</key>
@@ -116,13 +118,13 @@
 	<key>VisualBellOnlyWhenMuted</key>
 	<false/>
 	<key>columnCount</key>
-	<integer>135</integer>
+	<integer>140</integer>
 	<key>deleteSendsBackspace</key>
 	<false/>
 	<key>name</key>
-	<string>Dracula 2</string>
+	<string>Dracula</string>
 	<key>rowCount</key>
-	<integer>30</integer>
+	<integer>35</integer>
 	<key>scrollOnInput</key>
 	<true/>
 	<key>shellExitAction</key>
