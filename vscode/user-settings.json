@@ -5,11 +5,22 @@
   "editor.fontLigatures": true,
   "window.zoomLevel": 0,
   "editor.letterSpacing": 0.5,
-  "editor.fontSize": 13,
+  "editor.fontSize": 11,
   "editor.multiCursorModifier": "ctrlCmd",
   "typescript.check.npmIsInstalled": false,
   "workbench.colorCustomizations": {
-    "activityBarBadge.background": "#198AFF"
+    "activityBarBadge.background": "#80CBC4",
+    "list.activeSelectionForeground": "#80CBC4",
+    "list.inactiveSelectionForeground": "#80CBC4",
+    "list.highlightForeground": "#80CBC4",
+    "scrollbarSlider.activeBackground": "#80CBC450",
+    "editorSuggestWidget.highlightForeground": "#80CBC4",
+    "textLink.foreground": "#80CBC4",
+    "progressBar.background": "#80CBC4",
+    "pickerGroup.foreground": "#80CBC4",
+    "tab.activeBorder": "#80CBC4",
+    "notificationLink.foreground": "#80CBC4",
+    "editorIndentGuide.activeBackground": "#808080"
   },
   "workbench.activityBar.visible": true,
   "terminal.integrated.shell.osx": "/bin/zsh",
@@ -19,48 +30,45 @@
   "search.exclude": {
     "**/*.map": true,
     "**/node_modules": true,
-    "**/*.css": true,
     "**/bower_components": true,
     "**/build": true,
-    "**/public": true,
-    "**/tmp": true,
-    "**/_site": true,
-    "**/react_bundle.js": true,
-    "**/react_bundle.js.map": true,
-    "**/react-styles.css.map": true,
-    "**/react-styles.css": true,
-    "**/bundle": true,
-    "**/react-bundle.js.map": true,
-    "**/react-bundle.js": true,
-    "**/public/assets": true
+    "**/public": true
   },
   "files.exclude": {
-    "**/node_modules/": true,
-    "**/react-styles.css.map": true,
-    "**/react_bundle.js.map": true
+    "**/node_modules/": true
   },
   "window.restoreFullscreen": true,
   "window.newWindowDimensions": "maximized",
+  "markdown.preview.breaks": true,
+  "git.enableSmartCommit": true,
+  "javascript.validate.enable": false,
+  "workbench.startupEditor": "none",
+  "files.trimTrailingWhitespace": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Cobalt2",
+  "editor.snippetSuggestions": "top",
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.formatOnSave": true,
+  "prettier.printWidth": 140,
+  "prettier.singleQuote": false,
+  "prettier.useTabs": true,
+  "files.autoSave": "off",
+  "git.autofetch": true,
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "markdown.preview.breaks": true,
-  "git.enableSmartCommit": true,
-  "javascript.validate.enable": false,
-  "workbench.startupEditor": "none",
   "files.associations": {
     "*.js": "javascriptreact"
   },
-  "files.trimTrailingWhitespace": true,
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "An Old Hope",
-  "sublimeTextKeymap.promptV3Features": true,
-  "editor.snippetSuggestions": "top",
-  "vsicons.dontShowNewVersionMessage": true,
-  "editor.formatOnSave": true,
-  "prettier.printWidth": 140,
-  "prettier.singleQuote": false
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.matchBrackets": false,
+  "explorer.decorations.badges": false,
+  "editor.fontWeight": "400",
+  "prettier.eslintIntegration": true,
+  "editor.cursorWidth": 2,
+  "editor.renderWhitespace": "all"
 }
