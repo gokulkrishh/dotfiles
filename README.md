@@ -29,7 +29,7 @@ npm config set init.author.email "Your email id" ## Replace it with your email i
 
 <img src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/terminal.jpg" alt="screenshot"/>
 
-## Features includes
+## Features
 
 * Get custom [zsh theme (dracula), colors & font](https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/terminal.jpg) for terminal.
 
