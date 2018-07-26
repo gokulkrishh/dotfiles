@@ -30,3 +30,21 @@ defaults write -g AppleAquaColorVariant -int 6
 
 # Turn off keyboard illumination when computer is not used for 5 minutes
 defaults write com.apple.BezelServices kDimTime -int 300
+
+# Thanks Addy Osmani for the below items
+
+# Set highlight color to green
+defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
+
+# Menu bar: hide the Time Machine, Volume, User, and Bluetooth icons
+for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
+	defaults write "${domain}" dontAutoLoad -array \
+		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+		"/System/Library/CoreServices/Menu Extras/Volume.menu" \
+		"/System/Library/CoreServices/Menu Extras/User.menu"
+done
+defaults write com.apple.systemuiserver menuExtras -array \
+	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
+	"/System/Library/CoreServices/Menu Extras/Clock.menu"
