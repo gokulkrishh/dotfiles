@@ -11,6 +11,7 @@ source helper/utility.sh
 ## Terminal & Dock setup
 source osx/screen.sh
 source osx/dock.sh
+source osx/system.sh
 source osx/terminal.sh
 
 # Welcome msg
@@ -107,6 +108,16 @@ then
   e_header "Install yarn.."
   brew install yarn
 fi
+
+## Print installed node, npm version
+echo "node --version: $(node --version)"
+echo "npm --version: $(npm --version)"
+
+echo "Generating an RSA token for GitHub"
+ssh-keygen -t rsa -b 4096 -C "krishnangokul9@gmail.com" ## Replace it with your email id
+echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/id_rsa" | tee ~/.ssh/config
+eval "$(ssh-agent -s)"
+echo "run 'pbcopy < ~/.ssh/id_rsa.pub' and paste that into GitHub"
 
 ## Remove cloned dotfiles from system
 if [ -d ~/dotfiles ]; then

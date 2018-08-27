@@ -21,6 +21,7 @@
 #     * z -r foo  # cd to highest ranked dir matching foo
 #     * z -t foo  # cd to most recently accessed dir matching foo
 #     * z -l foo  # list matches instead of cd
+#     * z -e foo  # echo the best match, don't cd
 #     * z -c foo  # restrict matches to subdirs of $PWD
 
 [ -d "${_Z_DATA:-$HOME/.z}" ] && {
@@ -38,9 +39,10 @@ _z() {
     [ -z "$_Z_OWNER" -a -f "$datafile" -a ! -O "$datafile" ] && return
 
     _z_dirs () {
+        local line
         while read line; do
             # only count directories
-            [ -d "${line%%\|*}" ] && echo $line
+            [ -d "${line%%\|*}" ] && echo "$line"
         done < "$datafile"
         return 0
     }
@@ -60,7 +62,7 @@ _z() {
 
         # maintain the data file
         local tempfile="$datafile.$RANDOM"
-        awk < <(_z_dirs 2>/dev/null) -v path="$*" -v now="$(date +%s)" -F"|" '
+        _z_dirs | awk -v path="$*" -v now="$(date +%s)" -F"|" '
             BEGIN {
                 rank[path] = 1
                 time[path] = now
@@ -87,43 +89,42 @@ _z() {
         if [ $? -ne 0 -a -f "$datafile" ]; then
             env rm -f "$tempfile"
         else
-            [ "$_Z_OWNER" ] && chown $_Z_OWNER:$(id -ng $_Z_OWNER) "$tempfile"
+            [ "$_Z_OWNER" ] && chown $_Z_OWNER:"$(id -ng $_Z_OWNER)" "$tempfile"
             env mv -f "$tempfile" "$datafile" || env rm -f "$tempfile"
         fi
 
     # tab completion
     elif [ "$1" = "--complete" -a -s "$datafile" ]; then
-        while read line; do
-            [ -d "${line%%\|*}" ] && echo $line
-        done < "$datafile" | awk -v q="$2" -F"|" '
+        _z_dirs | awk -v q="$2" -F"|" '
             BEGIN {
-                if( q == tolower(q) ) imatch = 1
                 q = substr(q, 3)
-                gsub(" ", ".*", q)
+                if( q == tolower(q) ) imatch = 1
+                gsub(/ /, ".*", q)
             }
             {
                 if( imatch ) {
-                    if( tolower($1) ~ tolower(q) ) print $1
+                    if( tolower($1) ~ q ) print $1
                 } else if( $1 ~ q ) print $1
             }
         ' 2>/dev/null
 
     else
         # list/go
+        local echo fnd last list opt typ
         while [ "$1" ]; do case "$1" in
-            --) while [ "$1" ]; do shift; local fnd="$fnd${fnd:+ }$1";done;;
-            -*) local opt=${1:1}; while [ "$opt" ]; do case ${opt:0:1} in
-                    c) local fnd="^$PWD $fnd";;
-                    e) local echo=echo;;
+            --) while [ "$1" ]; do shift; fnd="$fnd${fnd:+ }$1";done;;
+            -*) opt=${1:1}; while [ "$opt" ]; do case ${opt:0:1} in
+                    c) fnd="^$PWD $fnd";;
+                    e) echo=1;;
                     h) echo "${_Z_CMD:-z} [-cehlrtx] args" >&2; return;;
-                    l) local list=1;;
-                    r) local typ="rank";;
-                    t) local typ="recent";;
+                    l) list=1;;
+                    r) typ="rank";;
+                    t) typ="recent";;
                     x) sed -i -e "\:^${PWD}|.*:d" "$datafile";;
                 esac; opt=${opt:1}; done;;
-             *) local fnd="$fnd${fnd:+ }$1";;
-        esac; local last=$1; [ "$#" -gt 0 ] && shift; done
-        [ "$fnd" -a "$fnd" != "^$PWD " ] || local list=1
+             *) fnd="$fnd${fnd:+ }$1";;
+        esac; last=$1; [ "$#" -gt 0 ] && shift; done
+        [ "$fnd" -a "$fnd" != "^$PWD " ] || list=1
 
         # if we hit enter on a completion just go there
         case "$last" in
