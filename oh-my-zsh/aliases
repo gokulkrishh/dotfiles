@@ -2,8 +2,21 @@
 
 # 1. GIT
 
-## Status
+## GIT
 alias s="git status"
+
+function gbd {
+	# Branch name present?
+	if [[ -z "$1" ]]; then
+		echo "\n🤔 Oops… you forgot to provide the branch name"
+		echo "👉 E.g. gbdel branch_name\n"
+	else
+		echo "\n⏳ Deleting…\n"
+		git branch -D "$1" # Local delete.
+		git push origin --delete "$1" # Remote delete.
+		echo "\n✅ Git branch $1 was deleted from local and remote.\n"
+	fi
+}
 
 # 2. Easy Navigation
 

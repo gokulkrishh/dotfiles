@@ -40,6 +40,7 @@
 | ----------------------- | ------------------------------------------------- |
 | `g`                     | Git command                                       |
 | `s`                     | Show git status                                   |
+| `gbd <branch-name>`     | Git delete branch both locally & remote           |
 | `ggpush`                | Git push into current branch                      |
 | `ggpull`                | Git pull into current branch                      |
 | `gf`                    | Git fetch                                         |
@@ -49,8 +50,8 @@
 | `ga .`                  | Git add all files                                 |
 | `ga <file-name>`        | Git add a file                                    |
 | `gco -`                 | Git checkout to previous branch                   |
-| `gb -M <branch-name>`   | Git create a new branch & checkout to that branch |
-| `gb -D <branch-name>`   | Git delete a new branch                           |
+| `gco -b <branch-name>`  | Git create a new branch                           |
+| `gb -D <branch-name>`   | Git delete a new branch locally                   |
 | `gd <file-name>`        | Git show diff for a particular file               |
 | `gd`                    | Git show diff for all the files                   |
 
