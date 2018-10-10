@@ -5,6 +5,7 @@
 ## GIT
 alias s="git status"
 
+# Delete git branch in local & remote
 function gbd {
 	# Branch name present?
 	if [[ -z "$1" ]]; then
@@ -17,6 +18,9 @@ function gbd {
 		echo "\n✅ Git branch $1 was deleted from local and remote.\n"
 	fi
 }
+
+# Delete all branches in git local except master
+alias gdbl="git branch | egrep -v ^master$ | sed 's/^[ *]*//' | sed 's/^/git branch -D /' | bash"
 
 # 2. Easy Navigation
 
