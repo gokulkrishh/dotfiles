@@ -61,6 +61,9 @@ defaults write com.apple.dashboard mcx-disabled -bool true
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
+# Fix mojave rendering issue
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
+
 # Reset Launchpad
 find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
 
