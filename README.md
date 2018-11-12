@@ -43,7 +43,7 @@ npm config set init.author.email "Your email id" ## Replace it with your email i
 
 ### Extra
 
-* [Tools I Use For Web Development](https://gokulkrishh.github.io/tools/2017/08/10/tools-i-use-for-web-development.html) such as browsers, terminal, editors, mac apps, chrome extensions, perf tools etc.
+* [Tools I Use For Web Development](https://gokulkrishh.github.io/blog/2017/tools-i-use/) such as browsers, terminal, editors, mac apps, chrome extensions, perf tools etc.
 
 ### Licence
 
