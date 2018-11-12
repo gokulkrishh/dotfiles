@@ -55,6 +55,16 @@
 | `gd <file-name>`        | Git show diff for a particular file               |
 | `gd`                    | Git show diff for all the files                   |
 
+## Git Extra's
+
+| Alias                   | Description                                       |
+| ----------------------- | ------------------------------------------------- |
+| `gitit`                 | Open's repo in git                                |
+| `gitit pulls`           | Open's pulls in git                               |
+| `gitit pulls <number>`  | Open's a particular pull request in git           |
+
+[More](https://github.com/peterhurford/git-it-on.zsh#well-for-github) commands.
+
 ## Z Autocompletion
 
 | Alias             | Description                 |

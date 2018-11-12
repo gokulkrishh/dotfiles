@@ -9,7 +9,7 @@ export CLICOLOR=true
 ZSH_THEME="dracula"
 
 ## oh-my-zsh plugins
-plugins=(git zsh-nvm npm)
+plugins=(git zsh-nvm npm git-it-on)
 
 # User configuration
 
