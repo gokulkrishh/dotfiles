@@ -2,7 +2,7 @@
 
 # dotfiles
 
-_Your cool dev environment is just a few steps away._
+_Your cool web development environment is just a few steps away._
 
 ## Clone the repo
 
@@ -10,7 +10,7 @@ _Your cool dev environment is just a few steps away._
 git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles
 ```
 
-## Install (OSX)
+## ✨ Install (OSX)
 
 ```bash
 cd ~/dotfiles && bash install.sh
@@ -29,7 +29,7 @@ npm config set init.author.email "Your email id" ## Replace it with your email i
 
 <img src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/terminal.jpg" alt="screenshot"/>
 
-## Features
+## 💅 Features
 
 * Get custom [zsh theme (dracula), colors & font](https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/terminal.jpg) for terminal.
 
