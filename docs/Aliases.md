@@ -40,6 +40,7 @@
 | ----------------------- | ------------------------------------------------- |
 | `g`                     | Git command                                       |
 | `s`                     | Show git status                                   |
+| `gdbl`                  | Delete all local branch's except master           |
 | `gbd <branch-name>`     | Git delete branch both locally & remote           |
 | `ggpush`                | Git push into current branch                      |
 | `ggpull`                | Git pull into current branch                      |

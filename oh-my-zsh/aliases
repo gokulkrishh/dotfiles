@@ -20,7 +20,7 @@ function gbd {
 }
 
 # Delete all branches in git local except master
-alias gdbl="git branch | egrep -v ^master$ | sed 's/^[ *]*//' | sed 's/^/git branch -D /' | bash"
+alias gdbl="git branch | grep -v "master" | xargs git branch -"
 
 # 2. Easy Navigation
 
