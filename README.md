@@ -33,19 +33,21 @@ npm config set init.author.email "Your email id"
 
 ### 💅 Features
 
-- [`ZSH Dracula Theme`](https://draculatheme.com/zsh/)
+- [`Oh My Zsh`](https://github.com/robbyrussell/oh-my-zsh) as your default terminal
 
-- [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) as your default terminal.
+- [`Dracula Theme`](https://draculatheme.com/zsh/)
 
-- [`Shortcuts, Aliases`](./docs/Aliases.md).
+- [`Shortcuts & Aliases`](./docs/Aliases.md)
 
 - [`Homebrew`](http://brew.sh/)
 
 - [`ZSH NVM`](https://github.com/lukechilds/zsh-nvm) 
 
-- [`Yarn`](https://yarnpkg.com/).
+- [`Yarn`](https://yarnpkg.com/)
 
-- [VS Code Settings](./vscode)
+- [`z - jump around`](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/z)
+
+- [`VS Code Settings`](./vscode)
 
 ### Extra
 
