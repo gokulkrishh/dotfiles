@@ -4,15 +4,15 @@
 
 _Your cool web development environment is just a few steps away._
 
-## ✨ Install
+## ✨ Steps
 
-##### `Clone`
+##### 1. `Clone`
 
 ```bash
 git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles
 ```
 
-##### `Install`
+##### 2. `Install`
 
 ```bash
 cd ~/dotfiles && bash install.sh
