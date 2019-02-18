@@ -18,8 +18,6 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles
 cd ~/dotfiles && bash install.sh
 ```
 
-_Once installation is complete, you are good to go with development in your OSX machine._
-
 ### Optional (setup NPM config)
 
 > Add your email, username for npm global config
