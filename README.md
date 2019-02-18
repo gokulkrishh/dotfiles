@@ -6,13 +6,13 @@ _Your cool web development environment is just a few steps away._
 
 ## ✨ Install
 
-1. `Clone`
+##### `Clone`
 
 ```bash
 git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles
 ```
 
-2. `Install`
+##### `Install`
 
 ```bash
 cd ~/dotfiles && bash install.sh
