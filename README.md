@@ -27,7 +27,7 @@ npm config set init.author.name "Your name"
 npm config set init.author.email "Your email id"
 ```
 
-<img src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/terminal.jpg" alt="screenshot"/>
+<img src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/terminal.png" alt="screenshot"/>
 
 ### 💅 Features
 
@@ -35,7 +35,7 @@ npm config set init.author.email "Your email id"
 - [`Dracula Theme`](https://draculatheme.com/zsh/)
 - [`Shortcuts & Aliases`](./docs/Aliases.md)
 - [`Homebrew`](http://brew.sh/)
-- [`ZSH NVM`](https://github.com/lukechilds/zsh-nvm) 
+- [`ZSH NVM`](https://github.com/lukechilds/zsh-nvm)
 - [`Yarn`](https://yarnpkg.com/)
 - [`z - jump around`](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/z)
 - [`VS Code Settings`](./vscode)
