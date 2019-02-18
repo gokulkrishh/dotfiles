@@ -4,19 +4,21 @@
 
 _Your cool web development environment is just a few steps away._
 
-## Clone the repo
+### ✨ Install
+
+1. `Clone`
 
 ```bash
 git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles
 ```
 
-## ✨ Install (OSX)
+2. `Install`
 
 ```bash
 cd ~/dotfiles && bash install.sh
 ```
 
-_Once installation is complete, you are good to go with development in your OSX._
+_Once installation is complete, you are good to go with development in your OSX machine._
 
 ## Optional (setup NPM config)
 
@@ -31,20 +33,28 @@ npm config set init.author.email "Your email id" ## Replace it with your email i
 
 ## 💅 Features
 
-* Get custom [zsh theme (dracula), colors & font](https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/terminal.jpg) for terminal.
+- [`ZSH Dracula Theme`](https://draculatheme.com/zsh/)
 
-* Set [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) as your default in terminal.
+- [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) as your default terminal.
 
-* Some awesome [Shortcuts, Aliases & lot more](https://github.com/gokulkrishh/dotfiles/blob/master/docs/Aliases.md).
+- [`Shortcuts, Aliases`](./docs/Aliases.md).
 
-* Get [Homebrew](http://brew.sh/), [ZSH NVM](https://github.com/lukechilds/zsh-nvm) and [Yarn](https://yarnpkg.com/).
+- [`Homebrew`](http://brew.sh/)
 
-* My [VSCode Editor](https://github.com/gokulkrishh/dotfiles/tree/master/vscode) custom configurations.
+- [`ZSH NVM`](https://github.com/lukechilds/zsh-nvm) 
+
+- [`Yarn`](https://yarnpkg.com/).
+
+- [VS Code Settings](./vscode)
 
 ### Extra
 
-* [Tools I Use For Web Development](https://gokulkrishh.github.io/blog/2017/tools-i-use/) such as browsers, terminal, editors, mac apps, chrome extensions, perf tools etc.
+- [`Tools I Use`](https://gokul.site/blog/2017/tools-i-use/)
 
-### Licence
 
-MIT © [Gokulakrishnan Kalaikovan](http://github.com/gokulkrishh)
+#### Contributions
+
+- If you wish to contribute to this repository, fork it and send a PR 😬.
+- And, if you like the repo, 🌟 it.
+
+##### MIT Licensed
