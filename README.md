@@ -4,7 +4,7 @@
 
 _Your cool web development environment is just a few steps away._
 
-### ✨ Install
+## ✨ Install
 
 1. `Clone`
 
@@ -20,18 +20,18 @@ cd ~/dotfiles && bash install.sh
 
 _Once installation is complete, you are good to go with development in your OSX machine._
 
-## Optional (setup NPM config)
+### Optional (setup NPM config)
 
 > Add your email, username for npm global config
 
 ```bash
-npm config set init.author.name "Your name" ## Replace it with your name
-npm config set init.author.email "Your email id" ## Replace it with your email id
+npm config set init.author.name "Your name"
+npm config set init.author.email "Your email id"
 ```
 
 <img src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/terminal.jpg" alt="screenshot"/>
 
-## 💅 Features
+### 💅 Features
 
 - [`ZSH Dracula Theme`](https://draculatheme.com/zsh/)
 
@@ -50,7 +50,6 @@ npm config set init.author.email "Your email id" ## Replace it with your email i
 ### Extra
 
 - [`Tools I Use`](https://gokul.site/blog/2017/tools-i-use/)
-
 
 #### Contributions
 
