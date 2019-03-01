@@ -5,6 +5,13 @@
 ## GIT
 alias s="git status"
 
+# Clone and cd into cloned repo and do yarn install 😬
+function clone() {
+	git clone --depth=1 $1
+	cd $(basename ${1%.*})
+	yarn install
+}
+
 # Delete git branch in local & remote
 function gbd {
 	# Branch name present?
@@ -29,6 +36,7 @@ alias o="open"
 alias oo="open ."
 alias ..="cd .."
 alias ...="cd ../.."
+alias -- -="cd -"
 
 ## Make dir and cd into it
 alias mkd="mkdir -p "$@" && cd "$_";"
@@ -38,6 +46,8 @@ alias mkd="mkdir -p "$@" && cd "$_";"
 ## Finder
 alias f="open -a Finder"
 alias la="alias | sed 's/=.*//'"
+alias lsd='ls -l | grep "^d"' # only directories
+alias fs="stat -f \"%z bytes\"" # File size
 
 ## Delete & Cleanup
 alias rm="=rm -rf"

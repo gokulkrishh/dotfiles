@@ -12,6 +12,7 @@
 | `w`               | Open workspace folder                                                 |
 | `f`               | Open finder                                                           |
 | `l`               | List all files colorized in long format                               |
+| `lsd`             | List directories only                                                 |
 | `show`            | Show hidden files                                                     |
 | `hide`            | Hide hidden files                                                     |
 | `cleanup`         | Delete .DS_Store files                                                |
@@ -20,24 +21,26 @@
 
 ## Utilities
 
-| Alias        | Description                                                                         |
-| ------------ | ----------------------------------------------------------------------------------- |
-| `ip`         | Show your current ip address                                                        |
-| `sca`        | Take screenshot of a window of your choice and Eg: `sca test.png` or `sca test.jpg` |
-| `logoff`     | To logoff                                                                           |
-| `emptytrash` | Empty the Trash on all mounted volumes and the main HDD                             |
-| `zip`        | Create a zip                                                                        |
-| `kt`         | To kill all chrome tabs (stable & canary)                                           |
-| `st`         | Open sublime text editor. Eg: `st .` opens sublime for current directory            |
-| `at`         | Open atom editor. Eg: `at .` opens atom for current directory                       |
-| `code`       | Open vscode editor. Eg: `code .` opens vscode for current directory                 |
-| `server`     | Python server for current directory                                                 |
-| `update`     | To update brew, npm, gem and their installed packages                               |
+| Alias           | Description                                                                         |
+| --------------- | ----------------------------------------------------------------------------------- |
+| `ip`            | Show your current ip address                                                        |
+| `sca`           | Take screenshot of a window of your choice and Eg: `sca test.png` or `sca test.jpg` |
+| `logoff`        | To logoff                                                                           |
+| `emptytrash`    | Empty the Trash on all mounted volumes and the main HDD                             |
+| `zip`           | Create a zip                                                                        |
+| `fs <file-name` | Get file size                                                                   |
+| `kt`            | To kill all chrome tabs (stable & canary)                                           |
+| `st`            | Open sublime text editor. Eg: `st .` opens sublime for current directory            |
+| `at`            | Open atom editor. Eg: `at .` opens atom for current directory                       |
+| `code`          | Open vscode editor. Eg: `code .` opens vscode for current directory                 |
+| `server`        | Python server for current directory                                                 |
+| `update`        | To update brew, npm, gem and their installed packages                               |
 
 # Git Aliases
 
 | Alias                   | Description                                       |
 | ----------------------- | ------------------------------------------------- |
+| `clone <repo-url>`      | Clone && cd into && do yarn install               |
 | `g`                     | Git command                                       |
 | `s`                     | Show git status                                   |
 | `gdbl`                  | Delete all local branch's except master           |
