@@ -4,8 +4,9 @@
 
 | Alias             | Description                                                           |
 | ----------------- | --------------------------------------------------------------------- |
-| `o`               | `open`                                                                |
-| `oo`              | `open .`                                                              |
+| `c`               | `Clear terminal`                                                      |
+| `o`               | `Open`                                                                |
+| `oo`              | `Open current folder in finder `                                      |
 | `..`              | Go back to parent folder                                              |
 | `cd -`            | Go to previous opened folder                                          |
 | `cl`              | Open codelabs folder                                                  |
@@ -28,7 +29,7 @@
 | `logoff`        | To logoff                                                                           |
 | `emptytrash`    | Empty the Trash on all mounted volumes and the main HDD                             |
 | `zip`           | Create a zip                                                                        |
-| `fs <file-name` | Get file size                                                                   |
+| `fs <file-name` | Get file size                                                                       |
 | `kt`            | To kill all chrome tabs (stable & canary)                                           |
 | `st`            | Open sublime text editor. Eg: `st .` opens sublime for current directory            |
 | `at`            | Open atom editor. Eg: `at .` opens atom for current directory                       |

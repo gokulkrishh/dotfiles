@@ -32,6 +32,7 @@ alias gdbl="git branch | grep -v "master" | xargs git branch -"
 # 2. Easy Navigation
 
 ## Shorcut navigations
+alias c="clear"
 alias o="open"
 alias oo="open ."
 alias ..="cd .."
