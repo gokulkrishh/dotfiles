@@ -14,23 +14,10 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles
 
 ##### 1.1 `Replace it with your name & email id` in line no [118](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L118) & [100](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L100) 
 
-```
-ssh-keygen -t rsa -b 4096 -C "krishnangokul9@gmail.com" ## Replace it with your email id
-```
-
 ##### 2. `Install`
 
 ```bash
 cd ~/dotfiles && bash install.sh
-```
-
-### Optional (setup NPM config)
-
-> Add your email, username for npm global config
-
-```bash
-npm config set init.author.name "Your name"
-npm config set init.author.email "Your email id"
 ```
 
 <img src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/terminal.png" alt="screenshot"/>
