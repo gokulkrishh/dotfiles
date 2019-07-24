@@ -12,7 +12,7 @@ _Your cool web development environment is just a few steps away._
 git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles
 ```
 
-##### 1.1 `Replace it with your name & email id` in line no [118](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L118) & [100](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L100) 
+##### 1.1 `Replace it with your name & email id` in line no [118](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L118) & [100](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L100)
 
 ##### 2. `Install`
 

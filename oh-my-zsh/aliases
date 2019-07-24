@@ -4,6 +4,15 @@
 
 ## GIT
 alias s="git status"
+alias grm="git rebase -i origin/master"
+alias grc="git rebase --continue"
+alias gra="git rebase --abort"
+
+# GitHub Contributors List
+function gclist() {
+	npx github-contributors-list --owner "$1" --repo "$2" --cols 6 --sortOrder desc --showlogin true --imagesize "117" --filter gitter-badger | pbcopy
+	echo "✅  Copied!"
+}
 
 # Clone and cd into cloned repo and do yarn install 😬
 function clone() {
@@ -77,6 +86,9 @@ alias kt="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-pro
 ## List all files colorized in long format
 alias l='ls -l ${colorflag}'
 
+## Lock screen while going AFK
+alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
 ## Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
@@ -98,11 +110,20 @@ alias server='python -m SimpleHTTPServer' # To start a local server
 ## To update brew, npm, gem and their installed packages
 alias update='brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
-## NPM & Yarn Shortcuts
-alias npmi="sudo npm install"
-alias npmg="sudo npm install -g"
+## NPM
+alias ni="npm install"
+alias ns="npm start"
+alias nt="npm test"
+alias dnm="rm -rf node_modules"
+
+## NPM RUN <anything>
+function nr() {
+	npm run $@
+}
+
+## Yarn
+alias ys="yarn start"
 alias ya="yarn add"
-alias yad="yarn add -D"
 alias yag="yarn global add"
 
 ## END

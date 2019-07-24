@@ -36,6 +36,7 @@
 | `code`          | Open vscode editor. Eg: `code .` opens vscode for current directory                 |
 | `server`        | Python server for current directory                                                 |
 | `update`        | To update brew, npm, gem and their installed packages                               |
+| `lock`          | To Lock screen while going AFK                                                      |
 
 # Git Aliases
 
@@ -59,6 +60,10 @@
 | `gb -D <branch-name>`   | Git delete a new branch locally                   |
 | `gd <file-name>`        | Git show diff for a particular file               |
 | `gd`                    | Git show diff for all the files                   |
+| `grm`                   | Git rebase -i origin/master                       |
+| `grc`                   | Git rebase --continue                             |
+| `gra`                   | Git rebase --abort                                |
+| `gclist <owner> <repo-name>`                | Git contribution list with avatar & link to profile  |
 
 ## Git Extra's
 
@@ -80,8 +85,10 @@
 
 | Alias  | Description               |
 | ------ | ------------------------- |
-| `npmi` | NPM install               |
-| `npmg` | NPM install globally      |
-| `ya`   | Yarn add                  |
-| `yad`  | Yarn add in devDependency |
-| `yag`  | Yarn add globally         |
+| `ni`   | npm install               |
+| `ns`   | npm start                 |
+| `nr <command>`   | npm run <anything>        |
+| `dnm`  | delete node_modules       |
+| `ys`   | yarn start                |
+| `ya`   | yarn add                  |
+| `yag`  | yarn global add           |
