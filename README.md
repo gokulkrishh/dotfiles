@@ -20,7 +20,7 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles
 cd ~/dotfiles && bash install.sh
 ```
 
-<img src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/screenshoot.png" alt="screenshot"/>
+<img src="https://i.imgur.com/JdnKQz5.png" alt="screenshot"/>
 
 ### 💅 Features
 
