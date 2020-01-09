@@ -1,7 +1,7 @@
 {
     "workbench.iconTheme": "vscode-icons",
     "editor.formatOnSave": true,
-    "editor.formatOnType": true,
+    "editor.formatOnType": false,
     "editor.fontFamily": "\"Dank Mono\", Menlo, Monaco, 'Courier New', monospace",
     "editor.lineHeight": 25,
     "editor.letterSpacing": 0.5,
@@ -12,11 +12,27 @@
     "terminal.integrated.shell.osx": "zsh",
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.lineHeight": 1.5,
+    "search.exclude": {
+        "**/*.map": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/build": true,
+        "**/public": true
+    },
     "files.exclude": {
         "**/*.map": true,
         "**/node_modules": true
     },
     "files.trimTrailingWhitespace": true,
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "files.associations": {
+        "*.js": "javascriptreact"
+    },
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "prettier.singleQuote": true,
