@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/logo.png" width="250" height="250"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/logo.png" /></p>
 
 # dotfiles
 
@@ -19,8 +19,6 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles
 ```bash
 cd ~/dotfiles && bash install.sh
 ```
-
-<img src="https://i.imgur.com/JdnKQz5.png" alt="screenshot"/>
 
 ### 💅 Features
 
