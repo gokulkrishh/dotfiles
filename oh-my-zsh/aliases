@@ -18,7 +18,6 @@ function gclist() {
 function clone() {
 	git clone --depth=1 $1
 	cd $(basename ${1%.*})
-	yarn install
 }
 
 # Delete git branch in local & remote
@@ -96,19 +95,30 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 # 5. Web Development
 
 ## Editor
-alias st="open -a 'Sublime Text'"
-alias at="open -a 'Atom'"
+alias "c."="code .";
+
+## Browsers
 
 ## Chrome aliases
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
 alias chromium="/Applications/Chromium.app/Contents/MacOS/Chromium"
 
+## Local
+
 ## Local server using python httpServer
 alias server='python -m SimpleHTTPServer' # To start a local server
 
+## Kill a port
+killport() { lsof -i tcp:"$*" | awk 'NR!=1 {print $2}' | xargs kill -9 ;}
+
+### Get all extensions used in vscode
+get-vscode-exts() { npx https://gist.github.com/gokulkrishh/9dd54a34ed93701a37811f0eb2e37822 }
+
 ## To update brew, npm, gem and their installed packages
 alias update='brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
+
+## Node & NPM
 
 ## NPM
 alias ni="npm install"
@@ -125,5 +135,6 @@ function nr() {
 alias ys="yarn start"
 alias ya="yarn add"
 alias yag="yarn global add"
+alias yui="yarn upgrade-interactive --latest"
 
 ## END

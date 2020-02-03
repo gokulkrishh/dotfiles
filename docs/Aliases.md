@@ -1,94 +1,99 @@
-# Available Aliases
+# Aliases
 
-## Folders & Finder
+## Table of Contents
 
-| Alias             | Description                                                           |
-| ----------------- | --------------------------------------------------------------------- |
-| `c`               | `Clear terminal`                                                      |
-| `o`               | `Open`                                                                |
-| `oo`              | `Open current folder in finder `                                      |
-| `..`              | Go back to parent folder                                              |
-| `cd -`            | Go to previous opened folder                                          |
-| `cl`              | Open codelabs folder                                                  |
-| `w`               | Open workspace folder                                                 |
-| `f`               | Open finder                                                           |
-| `l`               | List all files colorized in long format                               |
-| `lsd`             | List directories only                                                 |
-| `show`            | Show hidden files                                                     |
-| `hide`            | Hide hidden files                                                     |
-| `cleanup`         | Delete .DS_Store files                                                |
-| `la`              | To list all aliases                                                   |
-| `z <folder-name>` | Folder names which you have already visited to auto complete the path |
+- [Folders & Finder](#folders-and-finder)
+- [Utilities](#utilities)
+- [Git Aliases](#git-aliases)
+- [Git Extras](#git-extras)
+- [NPM and Yarn Aliases](#npm-and-yarn-aliases)
+
+## Folders and Finder
+
+| Alias               | Description                                                           |
+| ------------------- | --------------------------------------------------------------------- |
+| `..`                | Go back to parent folder                                              |
+| `c`                 | `Clear terminal`                                                      |
+| `cd -`              | Go to previous opened folder                                          |
+| `cleanup`           | Delete .DS_Store files                                                |
+| `f`                 | Open finder                                                           |
+| `get-vscode-exts`   | To get links for all installed vscode extensions                      |
+| `hide`              | Hide hidden files                                                     |
+| `l`                 | List all files colorized in long format                               |
+| `la`                | To list all aliases                                                   |
+| `lsd`               | List directories only                                                 |
+| `mkd <folder-name>` | To mkdir and cd into it                                               |
+| `o`                 | `Open`                                                                |
+| `oo`                | `Open current folder in finder`                                       |
+| `rm`                | Remove directory without -rf                                          |
+| `show`              | Show hidden files                                                     |
+| `z <folder-name>`   | Folder names which you have already visited to auto complete the path |
 
 ## Utilities
 
-| Alias           | Description                                                                         |
-| --------------- | ----------------------------------------------------------------------------------- |
-| `ip`            | Show your current ip address                                                        |
-| `sca`           | Take screenshot of a window of your choice and Eg: `sca test.png` or `sca test.jpg` |
-| `logoff`        | To logoff                                                                           |
-| `emptytrash`    | Empty the Trash on all mounted volumes and the main HDD                             |
-| `zip`           | Create a zip                                                                        |
-| `fs <file-name` | Get file size                                                                       |
-| `kt`            | To kill all chrome tabs (stable & canary)                                           |
-| `st`            | Open sublime text editor. Eg: `st .` opens sublime for current directory            |
-| `at`            | Open atom editor. Eg: `at .` opens atom for current directory                       |
-| `code`          | Open vscode editor. Eg: `code .` opens vscode for current directory                 |
-| `server`        | Python server for current directory                                                 |
-| `update`        | To update brew, npm, gem and their installed packages                               |
-| `lock`          | To Lock screen while going AFK                                                      |
+| Alias                    | Description                                                                         |
+| ------------------------ | ----------------------------------------------------------------------------------- |
+| `c.`                     | `To open current directory in vscode editor`                                        |
+| `code`                   | Open vscode editor. Eg: `code .` opens vscode for current directory                 |
+| `emptytrash`             | Empty the Trash on all mounted volumes and the main HDD                             |
+| `fs <file-name>`         | Get file size                                                                       |
+| `ip`                     | Show your current ip address                                                        |
+| `killport <port-number>` | To kill a port                                                                      |
+| `kt`                     | To kill all chrome tabs (stable & canary)                                           |
+| `lock`                   | To Lock screen while going AFK                                                      |
+| `logoff`                 | To logoff                                                                           |
+| `sca`                    | Take screenshot of a window of your choice and Eg: `sca test.png` or `sca test.jpg` |
+| `server`                 | Python server for current directory                                                 |
+| `update`                 | To update brew, npm, gem and their installed packages                               |
+| `zip`                    | Create a zip                                                                        |
 
 # Git Aliases
 
-| Alias                   | Description                                       |
-| ----------------------- | ------------------------------------------------- |
-| `clone <repo-url>`      | Clone && cd into && do yarn install               |
-| `g`                     | Git command                                       |
-| `s`                     | Show git status                                   |
-| `gdbl`                  | Delete all local branch's except master           |
-| `gbd <branch-name>`     | Git delete branch both locally & remote           |
-| `ggpush`                | Git push into current branch                      |
-| `ggpull`                | Git pull into current branch                      |
-| `gf`                    | Git fetch                                         |
-| `gc -m "My commit msg"` | Git commit with commit message                    |
-| `gco <branch-name>`     | Git checkout to a branch                          |
-| `gco <file-name>`       | Git checkout a file                               |
-| `ga .`                  | Git add all files                                 |
-| `ga <file-name>`        | Git add a file                                    |
-| `gco -`                 | Git checkout to previous branch                   |
-| `gco -b <branch-name>`  | Git create a new branch                           |
-| `gb -D <branch-name>`   | Git delete a new branch locally                   |
-| `gd <file-name>`        | Git show diff for a particular file               |
-| `gd`                    | Git show diff for all the files                   |
-| `grm`                   | Git rebase -i origin/master                       |
-| `grc`                   | Git rebase --continue                             |
-| `gra`                   | Git rebase --abort                                |
-| `gclist <owner> <repo-name>`                | Git contribution list with avatar & link to profile  |
+| Alias                        | Description                                         |
+| ---------------------------- | --------------------------------------------------- |
+| `clone <repo-url>`           | Clone && cd into                                    |
+| `g`                          | Git command                                         |
+| `ga .`                       | Git add all files                                   |
+| `ga <file-name>`             | Git add a file                                      |
+| `gb -D <branch-name>`        | Git delete a new branch locally                     |
+| `gbd <branch-name>`          | Git delete branch both locally & remote             |
+| `gc -m "My commit msg"`      | Git commit with commit message                      |
+| `gclist <owner> <repo-name>` | Git contribution list with avatar & link to profile |
+| `gco -`                      | Git checkout to previous branch                     |
+| `gco -b <branch-name>`       | Git create a new branch                             |
+| `gco <branch-name>`          | Git checkout to a branch                            |
+| `gco <file-name>`            | Git checkout a file                                 |
+| `gd <file-name>`             | Git show diff for a particular file                 |
+| `gd`                         | Git show diff for all the files                     |
+| `gdbl`                       | Delete all local branch's except master             |
+| `gf`                         | Git fetch                                           |
+| `ggpull`                     | Git pull into current branch                        |
+| `ggpush`                     | Git push into current branch                        |
+| `gra`                        | Git rebase --abort                                  |
+| `grc`                        | Git rebase --continue                               |
+| `grm`                        | Git rebase -i origin/master                         |
+| `s`                          | Show git status                                     |
 
-## Git Extra's
+## Git Extras
 
-| Alias                   | Description                                       |
-| ----------------------- | ------------------------------------------------- |
-| `gitit`                 | Open's repo in git                                |
-| `gitit pulls`           | Open's pulls in git                               |
-| `gitit pulls <number>`  | Open's a particular pull request in git           |
+| Alias                  | Description                             |
+| ---------------------- | --------------------------------------- |
+| `gitit pulls <number>` | Open's a particular pull request in git |
+| `gitit pulls`          | Open's pulls in git                     |
+| `gitit`                | Open's repo in git                      |
 
 [More](https://github.com/peterhurford/git-it-on.zsh#well-for-github) commands.
 
-## Z Autocompletion
+## NPM and Yarn Aliases
 
-| Alias             | Description                 |
-| ----------------- | --------------------------- |
-| `z <folder-name>` | cd into your recent folders |
-
-## NPM & Yarn Aliases
-
-| Alias  | Description               |
-| ------ | ------------------------- |
-| `ni`   | npm install               |
-| `ns`   | npm start                 |
-| `nr <command>`   | npm run <anything>        |
-| `dnm`  | delete node_modules       |
-| `ys`   | yarn start                |
-| `ya`   | yarn add                  |
-| `yag`  | yarn global add           |
+| Alias          | Description                       |
+| -------------- | --------------------------------- |
+| `dnm`          | delete node_modules               |
+| `ni`           | npm install                       |
+| `nr <command>` | npm run <anything>                |
+| `ns`           | npm start                         |
+| `ya`           | yarn add                          |
+| `yag`          | yarn global add                   |
+| `ys`           | yarn start                        |
+| `yu`           | yarn upgrade <package-name>       |
+| `yui`          | yarn upgrade-interactive --latest |

@@ -12,7 +12,7 @@ _Your cool web development environment is just a few steps away._
 git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles
 ```
 
-##### 1.1 `Replace it with your name & email id` in line no [118](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L118) & [100](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L100)
+##### 1.1 `Find replace it with your name & email id` in line no [118](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L118) & [100](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L100)
 
 ##### 2. `Install`
 
@@ -24,18 +24,18 @@ cd ~/dotfiles && bash install.sh
 
 ### 💅 Features
 
-- [`Oh My Zsh`](https://github.com/robbyrussell/oh-my-zsh)
-- [`Dracula Theme`](https://draculatheme.com/zsh/)
-- [`Shortcuts & Aliases`](./docs/Aliases.md)
-- [`Homebrew`](http://brew.sh/)
-- [`ZSH NVM`](https://github.com/lukechilds/zsh-nvm)
-- [`Yarn`](https://yarnpkg.com/)
-- [`z - jump around`](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/z)
-- [`VS Code Settings`](./vscode)
+- [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
+- [Shortcuts & Aliases](./docs/Aliases.md)
+- [Homebrew](http://brew.sh/)
+- [Zsh Nvm](https://github.com/lukechilds/zsh-nvm)
+- [Yarn](https://yarnpkg.com/)
+- [Z - Jump Around](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/z)
 
 ### 🤝 Extra
 
-- [`Tools I Use`](https://gokul.site/blog/2017/tools-i-use/)
+- [Tools I Use](https://gokul.site/uses)
+- [VS Code settings](./vscode)
+- [Iterm theme & settings](./Default.iterm2.json)
 
 #### Contributions
 
