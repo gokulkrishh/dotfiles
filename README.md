@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/logo.png" /></p>
+<p align="center"><img width="350" height="350" src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/logo.png" /></p>
 
 # dotfiles
 
