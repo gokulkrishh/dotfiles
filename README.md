@@ -4,6 +4,8 @@
 
 _Your cool web development environment is just a few steps away._
 
+![screenshot](./screenshot.png)
+
 ## ✨ Steps
 
 ##### 1. `Clone`
