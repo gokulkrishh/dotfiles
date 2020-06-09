@@ -97,8 +97,8 @@ if test ! $(which nvm); then
   sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
 
   ## Set npm global config
-  npm config set init.author.name "Gokulakrishnan Kalaikovan" ## Replace it with your name
-  npm config set init.author.email "krishnangokul9@gmail.com" ## Replace it with your email id
+  npm config set init.author.name "Christian Nyvoll" ## Replace it with your name
+  npm config set init.author.email "christiannyvoll@gmail.com" ## Replace it with your email id
 else
   e_warning "NVM is already installed. Skipping.."
 fi
@@ -115,7 +115,7 @@ echo "node --version: $(node --version)"
 echo "npm --version: $(npm --version)"
 
 echo "Generating an RSA token for GitHub"
-ssh-keygen -t rsa -b 4096 -C "krishnangokul9@gmail.com" ## Replace it with your email id
+ssh-keygen -t rsa -b 4096 -C "christiannyvoll@gmail.com" ## Replace it with your email id
 echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/id_rsa" | tee ~/.ssh/config
 eval "$(ssh-agent -s)"
 echo "run 'pbcopy < ~/.ssh/id_rsa.pub' and paste that into GitHub"

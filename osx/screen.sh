@@ -59,7 +59,7 @@ defaults write com.apple.dock autohide-time-modifier -float 0
 defaults write com.apple.dashboard mcx-disabled -bool true
 
 # Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide -bool false
 
 # Fix mojave rendering issue
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE

@@ -7,10 +7,10 @@ defaults write NSGlobalDomain AppleInterfaceStyle Dark;
 defaults write com.apple.Dock autohide-delay -float 0
 
 # Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide -bool false
 
 # Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 38
+defaults write com.apple.dock tilesize -int 50
 
 # Don’t animate opening applications from the Dock
 defaults write com.apple.dock launchanim -bool false
