@@ -14,7 +14,9 @@ _Your cool web development environment is just a few steps away._
 git clone https://github.com/Chr1stian/dotfiles-1.git ~/dotfiles
 ```
 
-##### 1.1 `Find replace it with your name & email id` in line no [103-104](https://github.com/Chr1stian/dotfiles-1/blob/master/install.sh#L103) & [121](https://github.com/Chr1stian/dotfiles-1/blob/master/install.sh#L121)
+##### 1.1 `Find replace your name & email` in line no [103-104](https://github.com/Chr1stian/dotfiles-1/blob/master/install.sh#L103) & [121](https://github.com/Chr1stian/dotfiles-1/blob/master/install.sh#L121) in install.sh
+
+##### 1.2 `Optionally edit/add/remove software from [software/software.sh](https://github.com/Chr1stian/dotfiles-1/blob/master/software/software.sh) `
 
 ##### 2. `Install`
 
