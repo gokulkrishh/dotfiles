@@ -14,7 +14,7 @@ _Your cool web development environment is just a few steps away._
 git clone https://github.com/Chr1stian/dotfiles-1.git ~/dotfiles
 ```
 
-##### 1.1 `Find replace it with your name & email id` in line no [118](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L118) & [100](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L100)
+##### 1.1 `Find replace it with your name & email id` in line no [103-104](https://github.com/Chr1stian/dotfiles-1/blob/master/install.sh#L103) & [121](https://github.com/Chr1stian/dotfiles-1/blob/master/install.sh#L121)
 
 ##### 2. `Install`
 
@@ -30,6 +30,7 @@ cd ~/dotfiles && bash install.sh
 - [Zsh Nvm](https://github.com/lukechilds/zsh-nvm)
 - [Yarn](https://yarnpkg.com/)
 - [Z - Jump Around](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/z)
+- [Software](https://github.com/Chr1stian/dotfiles-1/blob/master/software/software.sh)
 
 ### 🤝 Extra
 
