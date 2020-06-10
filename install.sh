@@ -83,6 +83,9 @@ else
   e_warning "Homebrew is already installed. Skipping.."
 fi
 
+# 3.5 Install software using Homebrew
+source software/software.sh
+
 # 4. Install ZSH NVM
 
 if test ! $(which nvm); then

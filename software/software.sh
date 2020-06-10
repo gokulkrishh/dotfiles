@@ -7,6 +7,7 @@ brew cask install vlc
 
 ##------------- Development Environment
 brew cask install visual-studio-code
+brew cask install intellij-idea
 brew cask install postman
 
 
