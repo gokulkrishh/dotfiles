@@ -16,8 +16,9 @@ function gclist() {
 
 # Clone and cd into cloned repo and do yarn install 😬
 function clone() {
-	git clone --depth=1 $1
-	cd $(basename ${1%.*})
+	git_dir="$(basename "$1" .git)"
+  git_dir_resolved=${2:-$git_dir}
+  git clone "$@" && cd "$git_dir_resolved";
 }
 
 # Delete git branch in local & remote
