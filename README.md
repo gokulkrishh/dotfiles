@@ -8,10 +8,10 @@ _Your cool web development environment is just a few steps away._
 
 ## ✨ Steps
 
-##### 1. `Clone`
+##### 1. `Clone & CD into`
 
 ```bash
-git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles
+git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd dotfiles
 ```
 
 ##### 2 `Find & replace with your name & email id` in line no [118](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L118) & [100](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L100)
@@ -19,7 +19,7 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles
 ##### 3. `Install`
 
 ```bash
-cd ~/dotfiles && bash install.sh
+bash install.sh
 ```
 
 ### 💅 Comes with
