@@ -14,28 +14,28 @@ _Your cool web development environment is just a few steps away._
 git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles
 ```
 
-##### 1.1 `Find replace it with your name & email id` in line no [118](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L118) & [100](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L100)
+##### 2 `Find replace it with your name & email id` in line no [118](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L118) & [100](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L100)
 
-##### 2. `Install`
+##### 3. `Install`
 
 ```bash
 cd ~/dotfiles && bash install.sh
 ```
 
-### 💅 Features
+### 💅 Comes with
 
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Shortcuts & Aliases](./docs/Aliases.md)
 - [Homebrew](http://brew.sh/)
-- [Zsh Nvm](https://github.com/lukechilds/zsh-nvm)
+- [NVM](https://github.com/lukechilds/zsh-nvm)
 - [Yarn](https://yarnpkg.com/)
 - [Z - Jump Around](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/z)
 
 ### 🤝 Extra
 
 - [Tools I Use](https://gokul.site/uses)
-- [VS Code settings](./vscode)
-- [Iterm theme & settings](./Default.iterm2.json)
+- [My VSCode Settings](./vscode)
+- [My Iterm Theme](./Default.iterm2.json)
 
 #### Contributions
 
