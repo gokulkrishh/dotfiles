@@ -14,7 +14,7 @@ _Your cool web development environment is just a few steps away._
 git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd dotfiles
 ```
 
-##### 2 `Find & replace with your name & email id` in line no [118](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L118) & [100](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L100)
+##### 2 `Find & Add your name & email id` in line no [118](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L118) & [100](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L100)
 
 ##### 3. `Install`
 
@@ -32,7 +32,7 @@ bash install.sh
 - [Z - Jump Around](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/z)
 
 
-### Settings & Fonts
+### ⚙️ Settings & Fonts
 
 - [FiraCode](https://github.com/tonsky/FiraCode)
 - [Iterm Profile](./Default.iterm2.json)
