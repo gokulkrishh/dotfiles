@@ -31,11 +31,16 @@ bash install.sh
 - [Yarn](https://yarnpkg.com/)
 - [Z - Jump Around](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/z)
 
+
+### Settings & Fonts
+
+- [FiraCode](https://github.com/tonsky/FiraCode)
+- [Iterm Profile](./Default.iterm2.json)
+- [VSCode Settings](./vscode)
+
 ### 🤝 Extra
 
 - [Tools I Use](https://gokul.site/uses)
-- [My VSCode Settings](./vscode)
-- [My Iterm Theme](./Default.iterm2.json)
 
 #### Contributions
 
