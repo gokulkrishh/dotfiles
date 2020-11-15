@@ -1,9 +1,5 @@
 {
-  "Ansi 7 Color" : {
-    "Green Component" : 0.73333334922790527,
-    "Blue Component" : 0.73333334922790527,
-    "Red Component" : 0.73333334922790527
-  },
+  "Transparency" : 0.073292750634517762,
   "Tags" : [
 
   ],
@@ -12,26 +8,22 @@
     "Blue Component" : 1,
     "Red Component" : 0.3333333432674408
   },
-  "Ansi 8 Color" : {
-    "Green Component" : 0.3333333432674408,
-    "Blue Component" : 0.3333333432674408,
-    "Red Component" : 0.3333333432674408
-  },
+  "Normal Font" : "FiraCode-Medium 12",
   "Draw Powerline Glyphs" : false,
   "Bold Color" : {
     "Green Component" : 1,
     "Blue Component" : 1,
     "Red Component" : 1
   },
-  "Ansi 9 Color" : {
-    "Green Component" : 0.3333333432674408,
-    "Blue Component" : 0.3333333432674408,
-    "Red Component" : 1
+  "Ansi 4 Color" : {
+    "Green Component" : 0,
+    "Blue Component" : 0.73333334922790527,
+    "Red Component" : 0
   },
-  "Guid" : "9CBFFB92-0FAB-4E21-B2E7-D9088DEA300E",
-  "Ansi 2 Color" : {
+  "Right Option Key Sends" : 0,
+  "Ansi 6 Color" : {
     "Green Component" : 0.73333334922790527,
-    "Blue Component" : 0,
+    "Blue Component" : 0.73333334922790527,
     "Red Component" : 0
   },
   "Rows" : 31,
@@ -67,9 +59,9 @@
   "Sync Title" : false,
   "Prompt Before Closing 2" : false,
   "BM Growl" : true,
-  "Mouse Reporting" : true,
   "Command" : "\/usr\/local\/bin\/zsh",
   "Description" : "Default",
+  "Mouse Reporting" : true,
   "Screen" : -1,
   "Selection Color" : {
     "Green Component" : 0.8353000283241272,
@@ -317,30 +309,38 @@
     "Blue Component" : 0,
     "Red Component" : 0.73333334922790527
   },
-  "Custom Directory" : "Recycle",
+  "Ansi 2 Color" : {
+    "Green Component" : 0.73333334922790527,
+    "Blue Component" : 0,
+    "Red Component" : 0
+  },
   "Ansi 3 Color" : {
     "Green Component" : 0.73333334922790527,
     "Blue Component" : 0,
     "Red Component" : 0.73333334922790527
   },
   "Horizontal Spacing" : 1,
-  "Right Option Key Sends" : 0,
-  "Ansi 6 Color" : {
-    "Green Component" : 0.73333334922790527,
-    "Blue Component" : 0.73333334922790527,
-    "Red Component" : 0
-  },
-  "Transparency" : 0.073292750634517762,
-  "Normal Font" : "FiraCode-Medium 12",
-  "Ansi 4 Color" : {
-    "Green Component" : 0,
-    "Blue Component" : 0.73333334922790527,
-    "Red Component" : 0
-  },
   "Ansi 5 Color" : {
     "Green Component" : 0,
     "Blue Component" : 0.73333334922790527,
     "Red Component" : 0.73333334922790527
   },
-  "Use Non-ASCII Font" : false
+  "Use Non-ASCII Font" : false,
+  "Ansi 7 Color" : {
+    "Green Component" : 0.73333334922790527,
+    "Blue Component" : 0.73333334922790527,
+    "Red Component" : 0.73333334922790527
+  },
+  "Ansi 8 Color" : {
+    "Green Component" : 0.3333333432674408,
+    "Blue Component" : 0.3333333432674408,
+    "Red Component" : 0.3333333432674408
+  },
+  "Ansi 9 Color" : {
+    "Green Component" : 0.3333333432674408,
+    "Blue Component" : 0.3333333432674408,
+    "Red Component" : 1
+  },
+  "Guid" : "9CBFFB92-0FAB-4E21-B2E7-D9088DEA300E",
+  "Custom Directory" : "Recycle"
 }
