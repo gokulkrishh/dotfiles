@@ -4,7 +4,7 @@
 
 _Your cool web development environment is just a few steps away._
 
-![screenshot](./screenshot.png)
+![screenshot terminal](./screenshot-terminal.png)
 
 ## ✨ Steps
 
