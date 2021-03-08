@@ -122,5 +122,8 @@
   "window.title": "${activeEditorMedium}${separator}${folderPath}",
   "formattingToggle.affects": [
     "formatOnSave"
-  ]
+  ],
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
