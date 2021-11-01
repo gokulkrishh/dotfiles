@@ -4,13 +4,14 @@
 
 _Your cool web development environment is just a few steps away._
 
-![screenshot](./screenshot.png)
+![screenshot terminal](./screenshot-terminal.png)
 
 ## ✨ Steps
 
-##### 1. `Clone`
+##### 1. `Clone & CD into`
 
 ```bash
+<<<<<<< HEAD
 git clone https://github.com/Chr1stian/dotfiles-1.git ~/dotfiles
 ```
 
@@ -19,26 +20,39 @@ git clone https://github.com/Chr1stian/dotfiles-1.git ~/dotfiles
 ##### 3. `Optionally edit/add/remove software` from [software/software.sh](https://github.com/Chr1stian/dotfiles-1/blob/master/software/software.sh)
 
 ##### 4. `Install`
-
-```bash
-cd ~/dotfiles && bash install.sh
+=======
+git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd dotfiles
 ```
 
-### 💅 Features
+##### 2 `Find & Add your name & email id` in line no [118](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L118) & [100](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L100)
+
+##### 3. `Install`
+>>>>>>> upstream/master
+
+```bash
+bash install.sh
+```
+
+### 💅 Comes with
 
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Shortcuts & Aliases](./docs/Aliases.md)
 - [Homebrew](http://brew.sh/)
-- [Zsh Nvm](https://github.com/lukechilds/zsh-nvm)
+- [NVM](https://github.com/lukechilds/zsh-nvm)
 - [Yarn](https://yarnpkg.com/)
 - [Z - Jump Around](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/z)
 - [Software](https://github.com/Chr1stian/dotfiles-1/blob/master/software/software.sh)
 
+
+### ⚙️ Settings & Fonts
+
+- [FiraCode](https://github.com/tonsky/FiraCode)
+- [Iterm Profile](./Default.iterm2.json)
+- [VSCode Settings](./vscode)
+
 ### 🤝 Extra
 
 - [Tools I Use](https://gokul.site/uses)
-- [VS Code settings](./vscode)
-- [Iterm theme & settings](./Default.iterm2.json)
 
 #### Contributions
 
