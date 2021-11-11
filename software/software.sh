@@ -16,7 +16,7 @@ brew cask install slack
 
 
 ##------------- Files Hosting Services
-brew cask install google-backup-and-sync
+
 
 ##------------- Music
 brew cask install spotify
