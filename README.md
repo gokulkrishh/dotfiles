@@ -11,7 +11,6 @@ _Your cool web development environment is just a few steps away._
 ##### 1. `Clone & CD into`
 
 ```bash
-<<<<<<< HEAD
 git clone https://github.com/Chr1stian/dotfiles-1.git ~/dotfiles
 ```
 
@@ -20,14 +19,6 @@ git clone https://github.com/Chr1stian/dotfiles-1.git ~/dotfiles
 ##### 3. `Optionally edit/add/remove software` from [software/software.sh](https://github.com/Chr1stian/dotfiles-1/blob/master/software/software.sh)
 
 ##### 4. `Install`
-=======
-git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd dotfiles
-```
-
-##### 2 `Find & Add your name & email id` in line no [118](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L118) & [100](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L100)
-
-##### 3. `Install`
->>>>>>> upstream/master
 
 ```bash
 bash install.sh
