@@ -1,25 +1,25 @@
 #!/bin/bash
 
 ##------------- Utilitaries
-brew cask install google-chrome
-brew cask install firefox
-brew cask install vlc
+brew install google-chrome
+brew install firefox
+brew install vlc
 
 ##------------- Development Environment
-brew cask install visual-studio-code
-brew cask install intellij-idea
-brew cask install postman
+brew install visual-studio-code
+brew install intellij-idea
+brew install postman
 
 
 ##------------- Communications app
-brew cask install slack
+brew install slack
 
 
 ##------------- Files Hosting Services
 
 
 ##------------- Music
-brew cask install spotify
+brew install spotify
 
 ##------------- Password manager
-brew cask install 1password
+brew install 1password
