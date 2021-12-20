@@ -11,7 +11,7 @@ _Your cool web development environment is just a few steps away._
 ##### 1. `Clone & CD into`
 
 ```bash
-git clone https://github.com/Chr1stian/dotfiles-1.git ~/dotfiles
+git clone https://github.com/Chr1stian/dotfiles.git ~/dotfiles
 ```
 
 ##### 2. `Find and replace your name & email` in line no [103-104](https://github.com/Chr1stian/dotfiles-1/blob/master/install.sh#L103) & [121](https://github.com/Chr1stian/dotfiles-1/blob/master/install.sh#L121) in install.sh
