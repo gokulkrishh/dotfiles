@@ -14,13 +14,13 @@ source osx/dock.sh
 source osx/system.sh
 source osx/terminal.sh
 
-# Welcome msg
+# Welcome message
 
 e_bold "${tan}┌──────────────────────────────────────────────────────────────┐
 |                                                              |
 | Welcome!!                                                    |
 |                                                              |
-| Setup your OS X machine for web development at ease.         |
+| Setup your MacOS for web development at ease.                |
 |                                                              |
 | Author: https://github.com/gokulkrishh                       |
 |                                                              |
@@ -31,6 +31,7 @@ e_bold "${tan}┌─────────────────────
 e_header "Setup git config (global)"
 cp gitignore ~/.gitignore_global  ## Adding .gitignore global
 git config --global core.excludesfile "${HOME}/.gitignore_global"
+git config --global help.autocorrect 1 ## Git autocorrections
 
 ask "${blue} (Option) Enter Your Github Email: "
 read -r emailId
