@@ -9,9 +9,9 @@
 #
 # @author Zeno Rocha <hi@zenorocha.com>
 
-local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
+local ret_status=" %(?:%{$fg_bold[grey]%}➜:%{$fg_bold[red]%}➜)"
 
-PROMPT='${ret_status}%{$fg_bold[green]%}%p%{$fg_bold[white]%} ‹$(git_current_user_name)›%  %{$fg_bold[yellow]%}%c $(git_prompt_info)% %{$reset_color%}'
+PROMPT='%p%{$fg_bold[green]%} @$(git_current_user_name)% ${ret_status} %{$fg_bold[green]%}%{$fg_bold[yellow]%}%c $(git_prompt_info)% %{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_CLEAN=") %{$fg_bold[green]%}✔ "
 ZSH_THEME_GIT_PROMPT_DIRTY=") %{$fg_bold[yellow]%}✗ "
