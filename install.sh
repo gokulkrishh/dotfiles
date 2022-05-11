@@ -116,6 +116,12 @@ brew install --cask \
   brave-browser \
   iterm2 \
   visual-studio-code
+
+## Install terminal apps
+brew install \
+  wget \
+  git \
+  nvm
   
 ## Print installed node, npm version
 echo "node --version: $(node --version)"
