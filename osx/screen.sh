@@ -15,8 +15,8 @@ defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 # Save screenshots to the desktop
 defaults write com.apple.screencapture location -string "$HOME/Desktop"
 
-# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
-defaults write com.apple.screencapture type -string "png"
+# Save screenshots in JPG format (other options: BMP, GIF, JPG, PDF, TIFF)
+defaults write com.apple.screencapture type -string "jpg"
 
 # Chime When Charging
 defaults write com.apple.PowerChime ChimeOnAllHardware -bool true && \
