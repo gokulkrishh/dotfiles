@@ -111,6 +111,12 @@ then
   brew install yarn
 fi
 
+## Install OSX apps
+brew install --cask \
+  brave-browser \
+  iterm2 \
+  visual-studio-code
+  
 ## Print installed node, npm version
 echo "node --version: $(node --version)"
 echo "npm --version: $(npm --version)"
