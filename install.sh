@@ -32,6 +32,7 @@ e_header "Setup git config (global)"
 cp gitignore ~/.gitignore_global  ## Adding .gitignore global
 git config --global core.excludesfile "${HOME}/.gitignore_global"
 git config --global help.autocorrect 1 ## Git autocorrections
+git config --global init.defaultBranch main ## Git main branch as default
 
 ask "${blue} (Option) Enter Your Github Email: "
 read -r emailId
