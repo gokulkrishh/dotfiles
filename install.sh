@@ -120,8 +120,7 @@ brew install --cask \
 ## Install terminal apps
 brew install \
   wget \
-  git \
-  nvm
+  git
   
 ## Print installed node, npm version
 echo "node --version: $(node --version)"
