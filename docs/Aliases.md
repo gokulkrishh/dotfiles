@@ -2,11 +2,13 @@
 
 ## Table of Contents
 
-- [Folders & Finder](#folders-and-finder)
-- [Utilities](#utilities)
+- [Aliases](#aliases)
+  - [Table of Contents](#table-of-contents)
+  - [Folders and Finder](#folders-and-finder)
+  - [Utilities](#utilities)
 - [Git Aliases](#git-aliases)
-- [Git Extras](#git-extras)
-- [NPM and Yarn Aliases](#npm-and-yarn-aliases)
+  - [Git Extras](#git-extras)
+  - [NPM and Yarn Aliases](#npm-and-yarn-aliases)
 
 ## Folders and Finder
 
@@ -52,6 +54,7 @@
 | Alias                        | Description                                         |
 | ---------------------------- | --------------------------------------------------- |
 | `clone <repo-url>`           | Clone && cd into                                    |
+| `s`                          | Show git status                                     |
 | `g`                          | Git command                                         |
 | `ga .`                       | Git add all files                                   |
 | `ga <file-name>`             | Git add a file                                      |
@@ -72,7 +75,6 @@
 | `gra`                        | Git rebase --abort                                  |
 | `grc`                        | Git rebase --continue                               |
 | `grm`                        | Git rebase -i origin/master                         |
-| `s`                          | Show git status                                     |
 
 ## Git Extras
 
@@ -89,11 +91,14 @@
 | Alias          | Description                       |
 | -------------- | --------------------------------- |
 | `dnm`          | delete node_modules               |
+| `dlf`          | delete lock files                 |
 | `ni`           | npm install                       |
 | `nr <command>` | npm run <anything>                |
 | `ns`           | npm start                         |
+| `nt`           | npm test                          |
 | `ya`           | yarn add                          |
 | `yag`          | yarn global add                   |
 | `ys`           | yarn start                        |
+| `yt`           | yarn test                         |
 | `yu`           | yarn upgrade <package-name>       |
 | `yui`          | yarn upgrade-interactive --latest |

@@ -2,7 +2,7 @@
 
 # dotfiles
 
-_Your cool web development environment is just a few steps away._
+_Setup your MacOS for web development at ease._
 
 ![screenshot terminal](./screenshot-terminal.png)
 
@@ -14,26 +14,30 @@ _Your cool web development environment is just a few steps away._
 git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd dotfiles
 ```
 
-##### 2 `Find & Add your name & email id` in line no [118](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L118) & [100](https://github.com/gokulkrishh/dotfiles/blob/master/install.sh#L100)
-
-##### 3. `Install`
+##### 2. `Install`
 
 ```bash
 bash install.sh
 ```
 
+> Note: Answer few questions to setup github, npm and github ssh rsa keys
+
 ### 💅 Comes with
 
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Shortcuts & Aliases](./docs/Aliases.md)
-- [Homebrew](http://brew.sh/)
+- [Homebrew](http://brew.sh/) - Installs below apps as well
+  - Brave Browser
+  - Visual Studio Code
+  - Iterm 2
+  - Git & Wget
 - [NVM](https://github.com/lukechilds/zsh-nvm)
-- [Yarn](https://yarnpkg.com/)
 - [Z - Jump Around](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/z)
 
-### ⚙️ Settings & Fonts
+### ⚙️ Settings & Fonts I use
 
-- [FiraCode](https://github.com/tonsky/FiraCode)
+- [FiraCode](https://github.com/tonsky/FiraCode) - Free
+- [MonoLisa](https://www.monolisa.dev) - Paid
 - [Iterm Profile](./Default.iterm2.json)
 
 ### 🤝 Extra

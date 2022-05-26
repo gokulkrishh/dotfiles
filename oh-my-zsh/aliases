@@ -127,6 +127,7 @@ alias ni="npm install"
 alias ns="npm start"
 alias nt="npm test"
 alias dnm="rm -rf node_modules"
+alias dlf="rm package-lock.json && rm yarn.lock"
 
 ## NPM RUN <anything>
 function nr() {
@@ -135,6 +136,7 @@ function nr() {
 
 ## Yarn
 alias ys="yarn start"
+alias yt="yarn test"
 alias ya="yarn add"
 alias yag="yarn global add"
 alias yui="yarn upgrade-interactive --latest"

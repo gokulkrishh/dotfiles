@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Welcome!!
-# Custom dotfiles to get you started with OS X machine for development.
-# Author: https://github.com/gokulkrishh
+# Setup your MacOS for web development at ease.
 # Source: https://github.com/gokulkrishh/dotfiles
 
 ## Custom color codes & utility functions
@@ -28,28 +27,36 @@ e_bold "${tan}┌─────────────────────
 
 # 1. Git configuration
 
-e_header "Setup git config (global)"
+e_header "To setup git/npm/ssh configs"
 cp gitignore ~/.gitignore_global  ## Adding .gitignore global
 git config --global core.excludesfile "${HOME}/.gitignore_global"
 git config --global help.autocorrect 1 ## Git autocorrections
 git config --global init.defaultBranch main ## Git main branch as default
 
-ask "${blue} (Option) Enter Your Github Email: "
+ask "${blue} (Required) Enter Your Fullname: "
+read -r fullName
+if is_empty $fullName; then
+  e_success "Captured the Fullname"
+else
+  e_error "Fullname not set"
+fi
+
+ask "${blue} (Required) Enter Your Email (For Github, NPM config): "
 read -r emailId
 if is_empty $emailId; then
-  git config --global user.email "$emailId" ## Git Email Id
-  e_success "Email is set"
+  git config --global user.email "$emailId"
+  e_success "Captured the Email Id"
 else
   e_error "Not set"
 fi
 
-ask "${blue} (Option) Enter Your Github Username: "
+ask "${blue} (Required) Enter Your Github Username: "
 read -r userName
 if is_empty $userName; then
-  git config --global user.name "$userName" ## Git Username
-  e_success "Username is set"
+  git config --global user.name "$userName"
+  e_success "Captured the Username"
 else
-  e_error "Not set"
+  e_error "Username not set"
 fi
 
 # 2. Install Oh-My-Zsh & custom aliases
@@ -99,18 +106,11 @@ if test ! $(which nvm); then
   sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
 
   ## Set npm global config
-  npm config set init-author-name "Gokulakrishnan Kalaikovan" ## Replace it with your name
-  npm config set init-author-email "krishnangokul9@gmail.com" ## Replace it with your email id
-	npm config set init-author-url "https://gokul.site" ## Replace it with your url
+  npm config set init-author-name "$fullName"
+  npm config set init-author-email "$emailId"
+	npm config set init-author-url "$siteName"
 else
   e_warning "NVM is already installed. Skipping.."
-fi
-
-## Yarn install
-if ! type yarn > /dev/null
-then
-  e_header "Install yarn.."
-  brew install yarn
 fi
 
 ## Install OSX apps
@@ -123,13 +123,13 @@ brew install --cask \
 brew install \
   wget \
   git
-  
+
 ## Print installed node, npm version
 echo "node --version: $(node --version)"
 echo "npm --version: $(npm --version)"
 
 echo "Generating an RSA token for GitHub"
-ssh-keygen -t rsa -b 4096 -C "krishnangokul9@gmail.com" ## Replace it with your email id
+ssh-keygen -t rsa -b 4096 -C "$emailId"
 echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/id_rsa" | tee ~/.ssh/config
 eval "$(ssh-agent -s)"
 echo "run 'pbcopy < ~/.ssh/id_rsa.pub' and paste that into GitHub"
@@ -141,6 +141,6 @@ fi
 
 e_thanks "Author: https://github.com/gokulkrishh \n"
 
-echo "🍺  Thats all, Done. Note that some of these changes require a logout/restart to take effect."
+echo "🍺  Thats all, Done. Note that some of these changes require logout/restart to take effect."
 
 # END
