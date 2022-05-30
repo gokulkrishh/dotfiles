@@ -20,7 +20,7 @@ git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd dotfiles
 bash install.sh
 ```
 
-> Note: Answer few questions to setup github, npm and github ssh rsa keys
+> Note: Answer a few questions to setup github, npm etc, for you via command line.
 
 ### 💅 Comes with
 
