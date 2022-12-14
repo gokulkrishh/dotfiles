@@ -112,6 +112,10 @@ else
   e_warning "NVM is already installed. Skipping.."
 fi
 
+# 5. Print installed node, npm version
+echo "node --version: $(node --version)"
+echo "npm --version: $(npm --version)"
+
 ## Install OSX apps
 brew install --cask \
   brave-browser \
@@ -123,10 +127,7 @@ brew install \
   wget \
   git
 
-## Print installed node, npm version
-echo "node --version: $(node --version)"
-echo "npm --version: $(npm --version)"
-
+# 6. Generate RSA Token for github
 echo "Generating an RSA token for GitHub"
 ssh-keygen -t rsa -b 4096 -C "$emailId"
 echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/id_rsa" | tee ~/.ssh/config
