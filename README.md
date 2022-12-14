@@ -34,11 +34,10 @@ bash install.sh
 - [NVM](https://github.com/lukechilds/zsh-nvm)
 - [Z - Jump Around](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/z)
 
-### ⚙️ Settings & Fonts I use
+### ⚙️ Fonts
 
 - [FiraCode](https://github.com/tonsky/FiraCode) - Free
 - [MonoLisa](https://www.monolisa.dev) - Paid
-- [Iterm Profile](./Default.iterm2.json)
 
 ### 🤝 Extra
 
