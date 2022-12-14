@@ -4,7 +4,7 @@
 
 _Setup your MacOS for web development at ease._
 
-![screenshot terminal](./screenshot-terminal.png)
+![screenshot terminal](./screenshot-terminal.jpg)
 
 ## ✨ Steps
 
@@ -26,7 +26,7 @@ bash install.sh
 
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Shortcuts & Aliases](./docs/Aliases.md)
-- [Homebrew](http://brew.sh/) - Installs below apps as well
+- [Homebrew](http://brew.sh/) - Installs following apps
   - Brave Browser
   - Visual Studio Code
   - Iterm 2
