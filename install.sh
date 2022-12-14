@@ -7,11 +7,10 @@
 ## Custom color codes & utility functions
 source helper/utility.sh
 
-## Terminal & Dock setup
+## Screen, Dock & System setup
 source osx/screen.sh
 source osx/dock.sh
 source osx/system.sh
-source osx/terminal.sh
 
 # Welcome message
 
