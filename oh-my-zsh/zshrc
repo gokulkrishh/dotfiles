@@ -6,7 +6,7 @@ export CLICOLOR=true
 
 ## Set name of the theme to load.
 ## Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="dracula"
+ZSH_THEME="bullettrain"
 
 ## oh-my-zsh plugins
 plugins=(git zsh-nvm npm git-it-on)
