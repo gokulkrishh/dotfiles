@@ -1,10 +1,10 @@
-<p align="center"><img width="350" height="350" src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/logo.png" /></p>
+<p align="center"><img width="200" height="200" src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/logo.png" /></p>
 
 # dotfiles
 
 _Setup your MacOS for web development at ease._
 
-![screenshot terminal](./screenshot-terminal.jpg)
+![screenshot terminal](./screenshot-terminal.png)
 
 ## ✨ Steps
 
