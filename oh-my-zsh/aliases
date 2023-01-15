@@ -109,7 +109,7 @@ alias chromium="/Applications/Chromium.app/Contents/MacOS/Chromium"
 ## Local
 
 ## Local server using python httpServer
-alias server='python -m SimpleHTTPServer' # To start a local server
+alias server='npx serve ./' # To start a local server
 
 ## Kill a port
 killport() { lsof -i tcp:"$*" | awk 'NR!=1 {print $2}' | xargs kill -9 ;}
