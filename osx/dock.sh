@@ -1,39 +1,37 @@
 #!/bin/bash
 
-# Set Dark Theme to Dock & Fullscreen
-defaults write NSGlobalDomain AppleInterfaceStyle Dark;
+# Read Dark Theme setting for Dock & Fullscreen
+defaults read NSGlobalDomain AppleInterfaceStyle
 
-# Remove the auto-hiding Dock delay
-defaults write com.apple.Dock autohide-delay -float 0
+# Read auto-hiding Dock delay
+defaults read com.apple.Dock autohide-delay
 
-# Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
+# Read auto-hide status of the Dock
+defaults read com.apple.dock autohide
 
-# Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 38
+# Read icon size of Dock items
+defaults read com.apple.dock tilesize
 
-# Don’t animate opening applications from the Dock
-defaults write com.apple.dock launchanim -bool false
+# Read animation status for opening applications from the Dock
+defaults read com.apple.dock launchanim
 
-# Show indicator lights for open applications in the Dock
-defaults write com.apple.dock show-process-indicators -bool true
+# Read indicator lights status for open applications in the Dock
+defaults read com.apple.dock show-process-indicators
 
-# Removed genie animation
-defaults write com.apple.dock mineffect suck;
+# Read minimize window animation effect
+defaults read com.apple.dock mineffect
 
-# Removes bouncing animation
-defaults write com.apple.dock no-bouncing -bool true
+# Read bouncing animation status for application icons in the Dock
+defaults read com.apple.dock no-bouncing
 
-# Enable highlight hover effect for the grid view of a stack (Dock)
-defaults write com.apple.dock mouse-over-hilite-stack -bool true
+# Read highlight hover effect status for the grid view of a stack in the Dock
+defaults read com.apple.dock mouse-over-hilite-stack
 
-# Speed up Mission Control animations
-defaults write com.apple.dock expose-animation-duration -float 0.1
+# Read Mission Control animation speed
+defaults read com.apple.dock expose-animation-duration
 
-# Disable the Launchpad gesture (pinch with thumb and three fingers)
-defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
+# Read status of Launchpad gesture (pinch with thumb and three fingers)
+defaults read com.apple.dock showLaunchpadGestureEnabled
 
-# Remove All Apps From The Dock In OS X
-defaults write com.apple.dock persistent-apps -array
-
-killall Dock
+# Read persistent apps in the Dock
+defaults read com.apple.dock persistent-apps
