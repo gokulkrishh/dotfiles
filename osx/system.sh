@@ -1,72 +1,64 @@
-# Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
+#!/bin/bash
 
-# Save to disk (not to iCloud) by default
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+# Read the sound effects on boot status
+sudo nvram -p | grep SystemAudioVolume
 
-# Automatically quit printer app once the print jobs complete
-defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+# Read the default save location setting
+defaults read NSGlobalDomain NSDocumentSaveNewDocumentsToCloud
 
-# Disable the crash reporter
-defaults write com.apple.CrashReporter DialogType -string "none"
+# Read the printer app auto-quit setting
+defaults read com.apple.print.PrintingPrefs "Quit When Finished"
 
+# Read the crash reporter setting
+defaults read com.apple.CrashReporter DialogType
 
-## Track pad & Keyboard
+# Read the scroll gesture with Ctrl modifier key for zoom setting
+defaults read com.apple.universalaccess closeViewScrollWheelToggle
+defaults read com.apple.universalaccess HIDScrollZoomModifierMask
 
-# Use scroll gesture with the Ctrl (^) modifier key to zoom
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+# Read the keyboard repeat rate setting
+defaults read NSGlobalDomain KeyRepeat
+defaults read NSGlobalDomain InitialKeyRepeat
 
-# Set a blazingly fast keyboard repeat rate
-#defaults write NSGlobalDomain KeyRepeat -int 1
-#defaults write NSGlobalDomain InitialKeyRepeat -int
+# Read the iTunes keyboard media keys setting
+#launchctl list | grep com.apple.rcd.plist
 
-# Stop iTunes from responding to the keyboard media keys
-#launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
+# Read the Finder quitting via Cmd+Q setting
+defaults read com.apple.finder QuitMenuItem
 
-## Finder
+# Read the Finder path bar setting
+defaults read com.apple.finder ShowPathbar
 
-# Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
-defaults write com.apple.finder QuitMenuItem -bool true
+# Read the Finder status bar setting
+defaults read com.apple.finder ShowStatusBar
 
-# Finder: show path bar
-defaults write com.apple.finder ShowPathbar -bool true
+# Read the Finder filename extensions setting
+defaults read NSGlobalDomain AppleShowAllExtensions
 
-# show status bar
-defaults write com.apple.finder ShowStatusBar -bool true
+# Read the Finder default search scope setting
+defaults read com.apple.finder FXDefaultSearchScope
 
-# Finder: show all filename extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+# Read the Finder folders on top when sorting by name setting
+defaults read com.apple.finder _FXSortFoldersFirst
 
-# When performing a search, search the current folder by default
-defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+# Read the Finder creation of .DS_Store files on network or USB volumes setting
+defaults read com.apple.desktopservices DSDontreadNetworkStores
+defaults read com.apple.desktopservices DSDontreadUSBStores
 
-# Keep folders on top when sorting by name
-defaults write com.apple.finder _FXSortFoldersFirst -bool true
+# Read the Mac App Store automatic update check setting
+defaults read com.apple.SoftwareUpdate AutomaticCheckEnabled
 
-# Avoid creating .DS_Store files on network or USB volumes
-defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
-defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+# Read the Mac App Store download newly available updates setting
+defaults read com.apple.SoftwareUpdate AutomaticDownload
 
+# Read the Mac App Store install system data files & security updates setting
+defaults read com.apple.SoftwareUpdate CriticalUpdateInstall
 
-## Mac App Store                                                               #
+# Read the Mac App Store app auto-update setting
+defaults read com.apple.commerce AutoUpdate
 
-# Enable the automatic update check
-defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
+# Read the Mac App Store reboot machine on macOS updates setting
+defaults read com.apple.commerce AutoUpdateRestartRequired
 
-# Download newly available updates in background
-defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
-
-# Install System data files & security updates
-defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
-
-# Turn on app auto-update
-defaults write com.apple.commerce AutoUpdate -bool true
-
-# Disallow the App Store to reboot machine on macOS updates
-defaults write com.apple.commerce AutoUpdateRestartRequired -bool false
-
-## Photos
-
-# Prevent Photos from opening automatically when devices are plugged in
-defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
+# Read the Photos automatic opening when devices are plugged in setting
+defaults read -currentHost com.apple.ImageCapture disableHotPlug

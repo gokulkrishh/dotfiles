@@ -1,84 +1,64 @@
 #!/bin/bash
 
-# Ask for the administrator password upfront
-sudo -v
+# Read opening and closing window animations status
+defaults read NSGlobalDomain NSAutomaticWindowAnimationsEnabled
 
-# Keep-alive: update existing `sudo` time stamp until `.osx` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+# Read window resize speed for Cocoa applications
+defaults read NSGlobalDomain NSWindowResizeTime
 
-# Disable opening and closing window animations
-defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+# Read screenshots save location
+defaults read com.apple.screencapture location
 
-# Increase window resize speed for Cocoa applications
-defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
+# Read screenshots save format
+defaults read com.apple.screencapture type
 
-# Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "$HOME/Desktop"
+# Read Chime When Charging status
+defaults read com.apple.PowerChime ChimeOnAllHardware
 
-# Save screenshots in JPG format (other options: BMP, GIF, JPG, PDF, TIFF)
-defaults write com.apple.screencapture type -string "jpg"
+# Read Dark Theme to menubar setting
+sudo defaults read /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey
 
-# Chime When Charging
-defaults write com.apple.PowerChime ChimeOnAllHardware -bool true && \
-open /System/Library/CoreServices/PowerChime.app
+# Read Appearance setting: Graphite
+defaults read -g AppleAquaColorVariant
 
-# Dark Theme to menubar
-sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true
+# Read keyboard illumination time setting
+defaults read com.apple.BezelServices kDimTime
 
-# Appearance: Graphite
-defaults write -g AppleAquaColorVariant -int 6
+# Read highlight color setting
+defaults read NSGlobalDomain AppleHighlightColor
 
-# Turn off keyboard illumination when computer is not used for 5 minutes
-defaults write com.apple.BezelServices kDimTime -int 300
-
-# Thanks Addy Osmani for the below items
-
-# Set highlight color to green
-defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
-
-# Menu bar: hide the Time Machine, Volume, User, and Bluetooth icons
+# Read menu bar items auto-load settings
 for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-	defaults write "${domain}" dontAutoLoad -array \
-		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-		"/System/Library/CoreServices/Menu Extras/Volume.menu" \
-		"/System/Library/CoreServices/Menu Extras/User.menu"
+	defaults read "${domain}" dontAutoLoad
 done
-defaults write com.apple.systemuiserver menuExtras -array \
-	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
-	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
-	"/System/Library/CoreServices/Menu Extras/Clock.menu"
+defaults read com.apple.systemuiserver menuExtras
 
-# Remove the auto-hiding Dock delay
-defaults write com.apple.dock autohide-delay -float 0
+# Read the auto-hiding Dock delay
+defaults read com.apple.dock autohide-delay
 
-# Remove the animation when hiding/showing the Dock
-defaults write com.apple.dock autohide-time-modifier -float 0
+# Read the Dock auto-hide animation modifier
+defaults read com.apple.dock autohide-time-modifier
 
-# Disable Dashboard
-defaults write com.apple.dashboard mcx-disabled -bool true
+# Read Dashboard status
+defaults read com.apple.dashboard mcx-disabled
 
-# Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
+# Read Dock auto-hide status
+defaults read com.apple.dock autohide
 
-# Fix mojave rendering issue
-defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
+# Read Mojave rendering issue fix setting
+defaults read -g CGFontRenderingFontSmoothingDisabled
 
-# Reset Launchpad
-find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
+# Read Launchpad reset status
+find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1
 
-# Make Dock more transparent
-defaults write com.apple.dock hide-mirror -bool true
+# Read Dock transparency setting
+defaults read com.apple.dock hide-mirror
 
-# Disable Notification Center and remove the menu bar icon
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+# Read Notification Center status
+launchctl list | grep com.apple.notificationcenterui
 
-## Hot corners
-
-# Top right screen corner → Desktop
-defaults write com.apple.dock wvous-tr-corner -int 4
-defaults write com.apple.dock wvous-tr-modifier -int 1048576
-
-# Bottom left screen corner → Start screen saver
-defaults write com.apple.dock wvous-bl-corner -int 3
-defaults write com.apple.dock wvous-bl-modifier -int 1048576
+# Read Hot corners settings
+defaults read com.apple.dock wvous-tr-corner
+defaults read com.apple.dock wvous-tr-modifier
+defaults read com.apple.dock wvous-bl-corner
+defaults read com.apple.dock wvous-bl-modifier
