@@ -18,8 +18,11 @@ defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 
 # Set a blazingly fast keyboard repeat rate
-#defaults write NSGlobalDomain KeyRepeat -int 1
-#defaults write NSGlobalDomain InitialKeyRepeat -int
+defaults write -g InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 1
+
+# Show hidden files by default & then use show/hide in terminal in alias
+defaults write com.apple.finder AppleShowAllFiles YES
 
 # Stop iTunes from responding to the keyboard media keys
 #launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
