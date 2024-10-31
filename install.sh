@@ -116,11 +116,13 @@ fi
 echo "node --version: $(node --version)"
 echo "npm --version: $(npm --version)"
 
-## Install OSX apps
+## Install useful mac apps
 brew install --cask \
-  brave-browser \
+  arc \
   iterm2 \
-  visual-studio-code
+  visual-studio-code \
+  1password \
+  spotify \
 
 ## Install terminal apps
 brew install \
