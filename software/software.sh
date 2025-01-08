@@ -2,13 +2,9 @@
 
 ##------------- Utilitaries
 brew install google-chrome
-brew install firefox
-brew install vlc
 
 ##------------- Development Environment
 brew install visual-studio-code
-brew install intellij-idea
-brew install postman
 
 
 ##------------- Communications app
