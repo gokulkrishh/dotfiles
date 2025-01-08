@@ -117,11 +117,8 @@ fi
 echo "node --version: $(node --version)"
 echo "npm --version: $(npm --version)"
 
-echo "Generating an RSA token for GitHub"
-ssh-keygen -t rsa -b 4096 -C "christiannyvoll@gmail.com" ## Replace it with your email id
-echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/id_rsa" | tee ~/.ssh/config
-eval "$(ssh-agent -s)"
-echo "run 'pbcopy < ~/.ssh/id_rsa.pub' and paste that into GitHub"
+# Assumes you have want to run the SSH Agent from 1Password, and have the key in there
+echo "Host *\n IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"" | tee ~/.ssh/config
 
 ## Remove cloned dotfiles from system
 if [ -d ~/dotfiles ]; then

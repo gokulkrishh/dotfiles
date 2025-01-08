@@ -73,6 +73,12 @@
 | `grc`                        | Git rebase --continue                               |
 | `grm`                        | Git rebase -i origin/master                         |
 | `s`                          | Show git status                                     |
+| `cm`                         | Git commit with commit message                      |
+| `c`                          | Git checkout                                        |
+| `aa`                         | Git add all files                                   |
+| `ph`                         | Git push                                            |
+| `pl`                         | Git pull                                            |
+
 
 ## Git Extras
 

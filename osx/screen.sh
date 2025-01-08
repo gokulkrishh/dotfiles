@@ -12,7 +12,7 @@ defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 # Increase window resize speed for Cocoa applications
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
-# Save screenshots to the desktop
+# Save screenshots to the screenshots folder
 defaults write com.apple.screencapture location -string "$HOME/Documents/screenshots"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)

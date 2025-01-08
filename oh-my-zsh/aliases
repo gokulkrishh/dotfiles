@@ -8,6 +8,11 @@ alias grm="git rebase -i origin/master"
 alias grc="git rebase --continue"
 alias gra="git rebase --abort"
 alias gpf="ggpull && git fetch"
+alias gitcm="git commit -m"
+alias gitc="git checkout"
+alias gitaa="git add ."
+alias gitph="git push"
+alias gitpl="git pull"
 
 # GitHub Contributors List
 function gclist() {
