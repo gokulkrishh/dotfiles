@@ -30,6 +30,7 @@ e_bold "${tan}┌─────────────────────
 
 e_header "Setup git config (global)"
 cp gitignore ~/.gitignore_global  ## Adding .gitignore global
+cp git/.gitconfig ~/.gitconfig     ## Copy .gitconfig to home directory
 git config --global core.excludesfile "${HOME}/.gitignore_global"
 
 ask "${blue} (Option) Enter Your Github Email: "
