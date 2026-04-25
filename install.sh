@@ -69,7 +69,6 @@ else
   e_note "Check .aliases file for more details."
   cp oh-my-zsh/aliases ~/.aliases
   cp oh-my-zsh/zshrc ~/.zshrc
-  cp oh-my-zsh/bullet-train.zsh-theme ~/.oh-my-zsh/themes/bullet-train.zsh-theme
   cp oh-my-zsh/z.sh ~/z.sh
   git clone https://github.com/peterhurford/git-it-on.zsh ~/.oh-my-zsh/custom/plugins/git-it-on
 fi
@@ -127,11 +126,11 @@ source osx/system.sh
 
 # 7. Generate SSH key for GitHub
 
-e_header "Generating an RSA token for GitHub"
-ssh-keygen -t rsa -b 4096 -C "$emailId"
-printf "Host *\n  AddKeysToAgent yes\n  UseKeychain yes\n  IdentityFile ~/.ssh/id_rsa\n" | tee ~/.ssh/config
+e_header "Generating an Ed25519 SSH key for GitHub"
+ssh-keygen -t ed25519 -C "$emailId"
+printf "Host *\n  AddKeysToAgent yes\n  UseKeychain yes\n  IdentityFile ~/.ssh/id_ed25519\n" | tee ~/.ssh/config
 eval "$(ssh-agent -s)"
-echo "run 'pbcopy < ~/.ssh/id_rsa.pub' and paste that into GitHub"
+echo "run 'pbcopy < ~/.ssh/id_ed25519.pub' and paste that into GitHub"
 
 ## Remove cloned dotfiles from system
 if [ -d ~/dotfiles ]; then
