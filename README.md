@@ -1,52 +1,83 @@
-<p align="center"><img width="200" height="200" src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/logo.png" /></p>
+<p align="center">
+  <img width="160" height="160" src="https://raw.githubusercontent.com/gokulkrishh/dotfiles/master/logo.png" />
+</p>
 
-# dotfiles
+<h1 align="center">dotfiles</h1>
 
-_Setup your MacOS for web development at ease._
+<p align="center">
+  <em>One-command setup for a fresh macOS machine, built for web development.</em>
+</p>
 
-![screenshot terminal](./screenshot-terminal.png)
+<p align="center">
+  <img src="./screenshot-terminal.png" alt="Terminal screenshot" />
+</p>
 
-## ✨ Steps
+---
 
-##### 1. `Clone & CD into`
+## Getting Started
+
+**1. Clone**
 
 ```bash
-git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd dotfiles
+git clone https://github.com/gokulkrishh/dotfiles.git ~/dotfiles && cd ~/dotfiles
 ```
 
-##### 2. `Install`
+**2. Run**
 
 ```bash
 bash install.sh
 ```
 
-> Note: Answer a few questions to setup github, npm etc, for you via command line.
+> You'll be prompted for your name, email, and GitHub username to configure git and npm.
 
-### 💅 Comes with
+---
 
-- [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
-- [Shortcuts & Aliases](./docs/aliases.md)
-- [Homebrew](https://brew.sh/) - Installs following apps
-  - Dia Browser
-  - Visual Studio Code
-  - iTerm2
-  - 1Password
-  - Git, Wget, duti & trash
-- [NVM](https://github.com/lukechilds/zsh-nvm)
-- [Z - Jump Around](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z)
+## What's Included
 
-### ⚙️ Fonts
+### Shell
 
-- [FiraCode](https://github.com/tonsky/FiraCode) - Free
-- [MonoLisa](https://www.monolisa.dev) - Paid
+| Tool | Description |
+|------|-------------|
+| [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) | Zsh framework with plugins and themes |
+| [zsh-nvm](https://github.com/lukechilds/zsh-nvm) | NVM managed via Oh My Zsh plugin |
+| [z](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z) | Jump to frequently used directories |
+| [Aliases](./docs/aliases.md) | Shortcuts for git, npm, navigation & more |
 
-### 🤝 Extra
+### Apps (via Homebrew)
 
-- [Tools I Use](https://gokul.site/uses)
+| App | Type |
+|-----|------|
+| [Dia](https://dia.so) | Browser |
+| [iTerm2](https://iterm2.com) | Terminal |
+| [Visual Studio Code](https://code.visualstudio.com) | Editor |
+| [1Password](https://1password.com) | Password manager |
 
-#### Contributions
+### CLI Tools (via Homebrew)
 
-- If you wish to contribute to this repository, fork it and send a PR 😬.
-- And, if you like the repo, 🌟 it.
+`git` · `wget` · `trash` · `duti`
 
-##### MIT Licensed
+### macOS Defaults
+
+- Dock: auto-hide, no bounce, faster animations
+- Finder: show hidden files, path bar, status bar, search in current folder
+- Keyboard: fast repeat rate
+- Screenshots saved to Desktop as JPG
+- App Store: auto-updates enabled
+
+---
+
+## Font
+
+- [Geist Mono](https://vercel.com/font) — free, by Vercel. Install via `brew install --cask font-geist-mono`
+
+---
+
+## More
+
+- [Tools I use](https://gokul.site/uses)
+- Found a bug or want to suggest something? Open a PR 😬
+- If this helped, [give it a star](https://github.com/gokulkrishh/dotfiles) 🌟
+
+---
+
+<p align="center"><sub>MIT Licensed · by <a href="https://github.com/gokulkrishh">gokulkrishh</a></sub></p>
