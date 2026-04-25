@@ -17,29 +17,17 @@ blue=$(tput setaf 38)
 
 ## To check input is empty or not
 is_empty() {
-if [ $# -eq  0 ]
-  then
-    return 1
-fi
-  return 0
+  [ $# -eq 0 ] || [ -z "$1" ]
 }
 
-## To check programs exit or not
+## To check program exists or not
 is_exists() {
-if [ $(type -P $1) ]; then
-  return 1
-fi
-  return 0
+  [ -n "$(type -P "$1")" ]
 }
 
-## To check file exits or not
+## To check file exists or not
 is_file_exists() {
-if [ -f "$file" ]
-then
-	return 1
-else
-	return 0
-fi
+  [ -f "$1" ]
 }
 
 # Custom echo functions

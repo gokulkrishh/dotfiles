@@ -24,15 +24,16 @@ bash install.sh
 
 ### 💅 Comes with
 
-- [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
-- [Shortcuts & Aliases](./docs/Aliases.md)
-- [Homebrew](http://brew.sh/) - Installs following apps
-  - Brave Browser
+- [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
+- [Shortcuts & Aliases](./docs/aliases.md)
+- [Homebrew](https://brew.sh/) - Installs following apps
+  - Dia Browser
   - Visual Studio Code
-  - Iterm 2
-  - Git & Wget
+  - iTerm2
+  - 1Password
+  - Git, Wget, duti & trash
 - [NVM](https://github.com/lukechilds/zsh-nvm)
-- [Z - Jump Around](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/z)
+- [Z - Jump Around](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z)
 
 ### ⚙️ Fonts
 

@@ -27,7 +27,7 @@
 | `mkd <folder-name>` | To mkdir and cd into it                                               |
 | `o`                 | `Open`                                                                |
 | `oo`                | `Open current folder in finder`                                       |
-| `rm`                | Remove directory without -rf                                          |
+| `rm`                | Move to Trash (safe delete)                                           |
 | `show`              | Show hidden files                                                     |
 | `z <folder-name>`   | Folder names which you have already visited to auto complete the path |
 
@@ -68,13 +68,13 @@
 | `gco <file-name>`            | Git checkout a file                                 |
 | `gd <file-name>`             | Git show diff for a particular file                 |
 | `gd`                         | Git show diff for all the files                     |
-| `gdbl`                       | Delete all local branch's except master             |
+| `gdbl`                       | Delete all local branches except main               |
 | `gf`                         | Git fetch                                           |
 | `ggpull`                     | Git pull into current branch                        |
 | `ggpush`                     | Git push into current branch                        |
 | `gra`                        | Git rebase --abort                                  |
 | `grc`                        | Git rebase --continue                               |
-| `grm`                        | Git rebase -i origin/master                         |
+| `grm`                        | Git rebase -i origin/main                           |
 
 ## Git Extras
 
@@ -90,8 +90,8 @@
 
 | Alias          | Description                       |
 | -------------- | --------------------------------- |
-| `dnm`          | delete node_modules               |
-| `dlf`          | delete lock files                 |
+| `dnm`          | move node_modules to Trash        |
+| `dlf`          | move lock files to Trash          |
 | `ni`           | npm install                       |
 | `nr <command>` | npm run <anything>                |
 | `ns`           | npm start                         |

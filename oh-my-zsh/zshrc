@@ -13,10 +13,16 @@ plugins=(git zsh-nvm npm git-it-on zsh-syntax-highlighting zsh-autosuggestions)
 
 # User configuration
 
-## RVM & MANPath
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-#export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/usr/local/sbin:$PATH"
+
+## Homebrew on Apple Silicon lives at /opt/homebrew
+if [ -d "/opt/homebrew/bin" ]; then
+  export PATH="/opt/homebrew/bin:$PATH"
+  export PATH="/opt/homebrew/opt/openssl/bin:$PATH"
+else
+  export PATH="/usr/local/opt/openssl/bin:$PATH"
+fi
 
 ## NVM path (should be before sourcing zsh)
 export NVM_LAZY_LOAD=true
@@ -31,15 +37,6 @@ source $HOME/.aliases
 ## Setting vim as default editor
 export EDITOR="vim"
 
-## Postgres path
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-
-## Adding RVM & other rails related to the path
-export PATH="$PATH:$HOME/.rvm/bin"
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/openssl/bin:$PATH"
-export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
-
 ## Yarn pkg manager path
 export PATH="$HOME/.yarn/bin:$PATH"
 
@@ -51,13 +48,11 @@ NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 PATH="$NPM_PACKAGES/bin:$PATH"
 
 ## Unset manpath so we can inherit from /etc/manpath via the `manpath`
-unset MANPATH ## delete if you already modified MANPATH elsewhere in your config
+unset MANPATH
 MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 ## Adding z script path for easy cding...
 ## Source: https://github.com/rupa/z
 . ~/z.sh
-
-clear
 
 ## END
