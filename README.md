@@ -74,7 +74,7 @@ bash install.sh
 
 ## More
 
-- [Tools I use](https://gokul.site/uses)
+- [Tools I use](https://gokul.site/blog/uses)
 - Found a bug or want to suggest something? Open a PR 😬
 - If this helped, [give it a star](https://github.com/gokulkrishh/dotfiles) 🌟
 
